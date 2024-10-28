@@ -76,7 +76,7 @@ function RooftopUnit() {
           {/* Service Cards Section */}
           <div className='bg-stone-200 py-8'>
           <div className="px-2 sm:px-8 lg:px-96">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full sm:mx-auto lg:m-auto py-4 px-24 justify-center"> 
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 w-full px-2 sm:px-8 md:px-16 lg:px-24 py-4 justify-center">
                 {servicesData.map((service, index) => (
                 <ServiceCard 
                     key={index} 
