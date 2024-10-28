@@ -90,7 +90,7 @@ function GasPiping() {
 
           {/* Service Cards Section */}
           <div className='bg-stone-200 py-8'>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-full mx-4 sm:mx-8 lg:mx-60 py-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-full mx-4 sm:mx-8 lg:mx-60 py-4">
               {servicesData.map((service, index) => (
                 <ServiceCard 
                   key={index} 
