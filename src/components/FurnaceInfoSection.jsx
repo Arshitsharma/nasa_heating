@@ -6,7 +6,7 @@ const FurnaceInfoSection = ({ sections, imageUrl }) => {
     <div className="bg-white">
       <div className="flex flex-col md:flex-row max-w-full mx-4 lg:mx-32 py-6 md:py-10">
         {/* Left Section for the Image */}
-        <div className="w-full md:w-1/2 flex justify-center items-center mb-6 md:mb-0">
+        <div className="w-full md:w-1/2 flex justify-center items-center mb-6 md:mb-0 md:pl-24">
           <img 
             src={imageUrl} 
             alt="Furnace"
