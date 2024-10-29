@@ -9,8 +9,8 @@ import satisfactionIcon from "../assets/icons/footer-100percent-satisfaction.svg
 
 const Footer = () => {
   return (
-    <div className="bg-stone-200 ">
-      <div className="bg-black text-white p-4 mx-60 ">
+    <div className="bg-stone-200">
+      <div className="bg-black text-white p-4 mx-0 md:mx-30 lg:mx-60"> {/* Maintain mx-60 for large screens and mx-0 for md and smaller */}
         <div className="flex justify-between items-center relative">
           <div className="flex space-x-4 relative">
 
