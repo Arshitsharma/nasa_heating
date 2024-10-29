@@ -41,7 +41,7 @@ function App() {
   return (
     <>
       {/* Conditionally apply class to Navbar for non-home routes */}
-      <div className={pathname === '/' ? 'navbar-container' : 'fixed top-0 left-0 right-0 z-10 bg-white shadow-lg'}>
+      <div className={pathname === '/nasa_heating/' ? 'navbar-container' : 'fixed top-0 left-0 right-0 z-10 bg-white shadow-lg'}>
         <Navbar />
       </div>
       <Routes>
