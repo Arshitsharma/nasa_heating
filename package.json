@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://your-username.github.io/nasa-heating",
+  "homepage": "https://github.com/Arshitsharma/nasa_heating.git",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
