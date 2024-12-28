@@ -10,18 +10,18 @@ export const Section3 = () => {
   const features = [
     {
       icon: provenProductsIcon,
-      title: 'We provide proven products',
-      description: 'from all reputed brands',
+      title: 'We provide proven products from all reputed brands',
+      // description: 'from all reputed brands',
     },
     {
       icon: bestFitIcon,
-      title: 'We help you find the best-fit',
-      description: 'products suited for your needs and budget',
+      title: 'The best-fit products suited for your needs and budget',
+      // description: 'products suited for your needs and budget',
     },
     {
       icon: competitivePricesIcon,
-      title: 'Competitive prices',
-      description: 'for equipment purchase',
+      title: 'Competitive prices for equipment purchase & repairs',
+      // description: 'for equipment purchase',
     },
     {
       icon: rapidResponseIcon,
@@ -30,13 +30,13 @@ export const Section3 = () => {
     },
     {
       icon: technicianIcon,
-      title: 'Factory trained and experienced technicians',
-      description: 'on call',
+      title: 'Factory trained and experienced technicians on call',
+      // description: 'on call',
     },
     {
       icon: customerSatisfactionIcon,
-      title: '100% Customer Satisfaction',
-      description: 'is our No. 1 priority',
+      title: '100% Customer Satisfaction is our No. 1 priority',
+      // description: 'is our No. 1 priority',
     },
   ];
 
@@ -50,40 +50,39 @@ export const Section3 = () => {
         </h1>
         
         {/* Subheading Text */}
-        <h3 className="text-base md:text-xl font-medium mt-2 md:mt-3 mx-4 sm:mx-10 md:mx-60 text-center">
-          We offer a full range of Heating, Ventilation, Air-conditioning, and Indoor air quality solutions that work together to make your home healthy, comfortable, safe, and energy efficient. From furnaces, air-conditioners, whole-home air cleaners, and humidity control to ventilation and zoned temperature solutions, we can help you maintain an optimum indoor environment for your home and family.
+        <h3 className="text-base md:text-xl font-normal mt-2 md:mt-3 mx-4 sm:mx-10 md:mx-60 text-center">
+        We offer a full range of Heating, Ventilation, Air conditioning and Indoor air quality solutions. From furnaces, air conditioners,
+        water heaters and humidifiers to whole-home air cleaners and ventilation systems, we can help you maintain an optimum indoor
+        environment for your home and family.
         </h3>
       </div>
 
       {/* Features Section */}
-      <div className="mt-10 mx-auto max-w-screen-lg">
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-6 text-center overflow-x-auto md:overflow-visible px-4">
-          <div className="flex space-x-6">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                // className="flex-shrink-0 flex flex-col items-center pt-4 p-2 bg-white shadow-lg min-w-[70vw] md:min-w-0 md:w-full"
-                className="flex-shrink-0 flex flex-col items-center pt-4 p-2 bg-white shadow-lg min-w-[70vw] md:min-w-0 md:w-full transition-colors duration-300 hover:bg-red-100"
-
-              >
-                <img src={feature.icon} alt={feature.title} className="text-red-600 text-5xl mb-4 h-16 w-16" />
-                <h6 className='text-sm'>{feature.title}</h6>
-                <h6 className='text-sm'>{feature.description}</h6>
-              </div>
-            ))}
-          </div>
+      <div className="mt-10 mx-auto max-w-screen-lg px-4">
+        <div className="flex md:grid md:grid-cols-3 lg:grid-cols-6 gap-4 overflow-x-auto md:overflow-visible pb-4 md:pb-0">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 flex flex-col items-center pt-4 p-2 bg-white shadow-lg shadow-neutral-400 w-[250px] sm:w-[280px] md:w-full transition-colors duration-300 hover:bg-red-100"
+            >
+              <img src={feature.icon} alt={feature.title} className="text-red-600 text-5xl mb-1 h-16 w-16" />
+              <h6 className='text-sm text-center'>{feature.title}</h6>
+              <h6 className='text-sm text-center'>{feature.description}</h6>
+            </div>
+          ))}
         </div>
       </div>
 
       {/* Footer Section */}
-      <div className="text-center mt-10 mx-4 sm:mx-10 md:mx-60 text-base md:text-lg">
+
+      {/* <div className="text-center mt-10 mx-4 sm:mx-10 md:mx-60 text-base md:text-lg">
         <p className="mb-4">
           We provide great customer service and rapid response to service calls for repairs of heating and air-conditioning equipment.
         </p>
         <p>
           Our licensed, experienced, and factory-trained technicians will always find the best solution to any problem you may have with your existing HVAC system, and get your system up and running as quickly and efficiently as possible.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -89,7 +89,8 @@ function Heating() {
           <FurnaceInfoSection sections={sections} imageUrl={imageUrl} /> {/* Pass imageUrl */}
 
           {/* Service Cards Section */}
-          <div className='bg-stone-200 py-8'>
+          
+          {/* <div className='bg-stone-200 py-8'>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-full mx-4 sm:mx-8 lg:mx-60 py-4">
               {servicesData.map((service, index) => (
                 <ServiceCard 
@@ -100,7 +101,29 @@ function Heating() {
                 />
               ))}
             </div>
-          </div>
+          </div> */}
+
+<div className="bg-stone-200 py-8">
+  <div className="overflow-x-auto">
+    <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-full mx-4 sm:mx-8 lg:mx-60 py-4">
+      {servicesData.map((service, index) => (
+        <div
+          key={index}
+          className="flex-shrink-0 w-full sm:w-auto" // Ensures full width on mobile
+        >
+          <ServiceCard 
+            icon={service.icon} 
+            title={service.title} 
+            description={service.description} 
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+
+
         </div>
 
         {/* Footer */}

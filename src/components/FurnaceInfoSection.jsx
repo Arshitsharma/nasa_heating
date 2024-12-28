@@ -20,7 +20,7 @@ const FurnaceInfoSection = ({ sections, imageUrl }) => {
             <div key={index} className="mb-6">
               <h2 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 text-gray-800">{section.title}</h2>
               {section.paragraphs.map((paragraph, idx) => (
-                <p key={idx} className="mb-2 text-gray-700 text-sm md:text-base lg:text-lg">{paragraph}</p>
+                <h4 key={idx} className="mb-2 text-gray-700 text-sm md:text-base lg:text-lg">{paragraph}</h4>
               ))}
             </div>
           ))}

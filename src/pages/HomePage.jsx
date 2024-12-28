@@ -6,6 +6,7 @@ import { Section3 } from '../components/Section3'
 import { Redtag } from '../components/Redtag'
 import { Testimonials } from '../components/Testimonials'
 import Footer from '../components/Footer'
+import { ServiceArea } from '../components/ServiceArea'
 
 function HomePage() {
   return (
@@ -16,6 +17,7 @@ function HomePage() {
           <Section2/>
           <Section3/>
           <Redtag/>
+          <ServiceArea/>
           <Testimonials/>          
           <Footer/>
         

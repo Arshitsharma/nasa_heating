@@ -17,12 +17,12 @@ const serviceCards = [
   {
     title: 'Heating',
     icon: SunIcon,
-    items: ['Furnaces', 'Water Heaters', 'TANKLESS Water Heaters', 'Boilers for Hydronic Heating'],
+    items: ['Furnaces', 'Water Heaters', 'Tankless Water Heaters', 'Boilers for Hydronic Heating'],
   },
   {
     title: 'Air-conditioning',
     icon: SnowflakeIcon,
-    items: ['Air-conditioners', 'Ductless Air-conditioners', 'Rooftop Units'],
+    items: ['Air-conditioners','Central Air Conditioners' , 'Ductless Air-conditioners', 'Rooftop Units'],
   },
   {
     title: 'Indoor Air Quality',
@@ -31,7 +31,7 @@ const serviceCards = [
       'Central Humidifiers',
       'Air Cleaners & Filters',
       'Ventilation & Fresh Air Units',
-      'Thermostats - WiFi, Standard & Digital',
+      'Thermostats - WiFi, Digital',
     ],
   },
 ];
@@ -54,7 +54,7 @@ export const Section2 = React.memo(() => {
           {services.map((service, index) => (
             <button
               key={index}
-              className="bg-red-600 text-white py-2 md:py-3 px-4 md:px-6 rounded font-semibold text-sm md:text-lg hover:bg-red-700 transition duration-300"
+              className="bg-red-600 text-white py-2 md:py-3 px-4 md:px-6 font-semibold text-sm md:text-lg hover:bg-red-700 transition duration-300 cursor-default"
               aria-label={`Learn more about ${service.title}`}
             >
               {service.title}
@@ -91,7 +91,7 @@ export const Section2 = React.memo(() => {
             {serviceCards.map((card, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 sm:flex-shrink md:flex-shrink-0 flex flex-col items-center border p-4 md:p-6 text-center shadow-lg rounded-md transition-colors duration-300 hover:bg-red-100 w-64 sm:w-auto"
+                className="flex-shrink-0 sm:flex-shrink md:flex-shrink-0 flex flex-col items-center border p-4 md:p-6 text-center shadow-lg shadow-neutral-400 transition-colors duration-300 hover:bg-red-100 w-64 sm:w-auto select-none"
                 aria-label={`Details about ${card.title}`}
               >
                 <img src={card.icon} alt={`${card.title} icon`} className="w-12 h-12 md:w-16 md:h-16 mb-4" />

@@ -8,12 +8,12 @@ const ServiceCard = ({ icon, title, description }) => {
         alt={title} 
         className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 mb-4"
       />
-      <h3 className="text-gray-800 font-bold text-base sm:text-lg md:text-xl lg:text-2xl mb-2">
+      <h5 className="text-gray-800 font-bold text-base sm:text-lg md:text-xl lg:text-xl mb-2">
         {title}
-      </h3>
-      <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl">
+      </h5>
+      <h6 className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-base">
         {description}
-      </p>
+      </h6>
     </div>
   );
 };
