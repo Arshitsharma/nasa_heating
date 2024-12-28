@@ -36,16 +36,16 @@ const serviceCards = [
   },
 ];
 
-export const Section2 = () => {
+export const Section2 = React.memo(() => {
   return (
-    <>
+    <div>
       {/* Section Header */}
-      <div className="flex flex-col items-center text-3xl md:text-4xl font-bold mt-6 px-4">
+      <div className="flex flex-col items-center text-3xl md:text-4xl font-bold mt-6 px-4 sm:px-6 lg:px-0 max-w-6xl mx-auto">
         <h1>How can we help you?</h1>
-        <p className="text-base md:text-xl font-normal mx-auto mt-3 text-center px-4 md:px-12 lg:px-60">
-          Prompt, reliable and helpful. Our engineers always have a solution 
-          for any problem that you may have with your heating, air conditioning, hot water system or its components.
-        </p>
+        <h3 className="text-base md:text-xl font-normal mx-auto mt-3 text-center px-4 sm:px-6 lg:px-8">
+          Prompt, reliable and helpful. Our engineers always have a solution for any problem that you may have with your
+          heating, air conditioning, hot water system, or its components.
+        </h3>
       </div>
 
       <div className="max-w-screen-lg mx-auto px-4 sm:px-8 lg:px-16">
@@ -55,6 +55,7 @@ export const Section2 = () => {
             <button
               key={index}
               className="bg-red-600 text-white py-2 md:py-3 px-4 md:px-6 rounded font-semibold text-sm md:text-lg hover:bg-red-700 transition duration-300"
+              aria-label={`Learn more about ${service.title}`}
             >
               {service.title}
             </button>
@@ -62,27 +63,53 @@ export const Section2 = () => {
         </div>
 
         {/* Services Cards */}
-        <div className="flex gap-4 md:gap-6 mt-8 overflow-x-auto px-4 md:px-0 snap-x snap-mandatory">
+        
+        {/*         
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-8">
           {serviceCards.map((card, index) => (
             <div
               key={index}
-              className="min-w-[85%] md:min-w-0 md:w-1/3 border p-4 md:p-6 text-center shadow-lg rounded-md snap-center"
+              // className="flex flex-col items-center border p-4 md:p-6 text-center shadow-lg rounded-md"
+              className="flex flex-col items-center border p-4 md:p-6 text-center shadow-lg rounded-md transition-colors duration-300 hover:bg-red-100"
+              aria-label={`Details about ${card.title}`}
             >
-              <img src={card.icon} alt={card.title} className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4" />
-              <h3 className="text-xl md:text-2xl font-bold mb-2">{card.title}</h3>
-              <ul className="text-left text-sm md:text-base">
+              <img src={card.icon} alt={`${card.title} icon`} className="w-12 h-12 md:w-16 md:h-16 mb-4" />
+              <h5 className="text-xl md:text-2xl font-bold mb-2">{card.title}</h5>
+              <ul className="list-disc pl-4 text-left text-sm md:text-base space-y-1 mt-2">
                 {card.items.map((item, itemIndex) => (
-                  <li key={itemIndex}>• {item}</li>
+                  <li className='text-sm' key={itemIndex}>{item}</li>
                 ))}
               </ul>
             </div>
           ))}
-        </div>
-      </div>
-    </>
-  );
-};
+        </div> */}
 
+        {/* Services Cards */}
+
+        <div className="mt-6 overflow-x-auto sm:overflow-visible">
+          <div className="flex sm:grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+            {serviceCards.map((card, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 sm:flex-shrink md:flex-shrink-0 flex flex-col items-center border p-4 md:p-6 text-center shadow-lg rounded-md transition-colors duration-300 hover:bg-red-100 w-64 sm:w-auto"
+                aria-label={`Details about ${card.title}`}
+              >
+                <img src={card.icon} alt={`${card.title} icon`} className="w-12 h-12 md:w-16 md:h-16 mb-4" />
+                <h5 className="text-xl md:text-2xl font-bold mb-2">{card.title}</h5>
+                <ul className="list-disc pl-4 text-left text-sm md:text-base space-y-1 mt-2">
+                  {card.items.map((item, itemIndex) => (
+                    <li className="text-sm" key={itemIndex}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+});
 
 // import React from 'react';
 // // Import SVGs
@@ -121,17 +148,16 @@ export const Section2 = () => {
 //     ],
 //   },
 // ];
-
 // export const Section2 = () => {
 //   return (
 //     <>
 //       {/* Section Header */}
-//       <div className="flex flex-col items-center text-3xl md:text-4xl font-bold mt-6 px-4">
+//       <div className="flex flex-col items-center text-3xl md:text-4xl font-bold mt-6 px-4 sm:px-6 lg:px-0 max-w-6xl mx-auto">
 //         <h1>How can we help you?</h1>
-//         <p className="text-base md:text-xl font-normal mx-auto mt-3 text-center px-4 md:px-12 lg:px-60">
+//         <h3 className="text-base md:text-xl font-normal mx-auto mt-3 text-center px-4 sm:px-6 lg:px-8">
 //           Prompt, reliable and helpful. Our engineers always have a solution 
 //           for any problem that you may have with your heating, air conditioning, hot water system or its components.
-//         </p>
+//         </h3>
 //       </div>
 
 //       <div className="max-w-screen-lg mx-auto px-4 sm:px-8 lg:px-16">
@@ -148,19 +174,46 @@ export const Section2 = () => {
 //         </div>
 
 //         {/* Services Cards */}
-//         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-8">
+//         {/* <div className="flex gap-4 md:gap-6 mt-8 overflow-x-auto px-4 md:px-0 snap-x snap-mandatory">
 //           {serviceCards.map((card, index) => (
-//             <div key={index} className="border p-4 md:p-6 text-center shadow-lg rounded-md">
+//             <div
+//               key={index}
+//               className="min-w-[85%] md:min-w-0 md:w-1/3 border p-4 md:p-6 text-center shadow-lg rounded-md snap-center"
+//             >
 //               <img src={card.icon} alt={card.title} className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4" />
-//               <h3 className="text-xl md:text-2xl font-bold mb-2">{card.title}</h3>
-//               <ul className="text-left text-sm md:text-base">
+//               <h5 className="text-xl md:text-xl font-bold mb-2">{card.title}</h5>
+//               <h6 className="text-left text-sm md:text-base">
 //                 {card.items.map((item, itemIndex) => (
-//                   <li key={itemIndex}>• {item}</li>
+//                   <li key={itemIndex}> {item}</li>
 //                 ))}
-//               </ul>
+//               </h6>
 //             </div>
 //           ))}
-//         </div>
+//         </div> */}
+//       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-8">
+//         {serviceCards.map((card, index) => (
+//           <div
+//             key={index}
+//             className="flex flex-col items-center border p-4 md:p-6 text-center shadow-lg rounded-md"
+//           >
+//             <img src={card.icon} alt={card.title} className="w-12 h-12 md:w-16 md:h-16 mb-4" />
+//             <h5 className="text-xl md:text-2xl font-bold mb-2">{card.title}</h5>
+//             {/* <ul className="text-left text-sm md:text-base space-y-1 mt-2">
+//               {card.items.map((item, itemIndex) => (
+//                 <li key={itemIndex} className="leading-relaxed">• {item}</li>
+//               ))}
+//             </ul> */}
+//             <ul className="list-none pl-4 text-left text-sm md:text-base space-y-1 mt-2">
+//               {card.items.map((item, itemIndex) => (
+//                 <li key={itemIndex} className="flex">
+//                   <span className="mr-1">•</span>
+//                   <span className="indent-[0rem] pl-0">{item}</span>
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+//         ))}
+//       </div>
 //       </div>
 //     </>
 //   );

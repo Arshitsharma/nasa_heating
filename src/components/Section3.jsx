@@ -45,14 +45,14 @@ export const Section3 = () => {
       {/* Header */}
       <div className="text-center">
         {/* Main Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold">
+        <h1 className="text-3xl md:text-4xl font-bold">
           Why Choose NASA Heating?
-        </h2>
+        </h1>
         
         {/* Subheading Text */}
-        <p className="text-base md:text-xl font-medium mt-2 md:mt-3 mx-4 sm:mx-10 md:mx-60 text-center">
+        <h3 className="text-base md:text-xl font-medium mt-2 md:mt-3 mx-4 sm:mx-10 md:mx-60 text-center">
           We offer a full range of Heating, Ventilation, Air-conditioning, and Indoor air quality solutions that work together to make your home healthy, comfortable, safe, and energy efficient. From furnaces, air-conditioners, whole-home air cleaners, and humidity control to ventilation and zoned temperature solutions, we can help you maintain an optimum indoor environment for your home and family.
-        </p>
+        </h3>
       </div>
 
       {/* Features Section */}
@@ -62,11 +62,13 @@ export const Section3 = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 flex flex-col items-center pt-4 p-2 bg-white shadow-lg min-w-[70vw] md:min-w-0 md:w-full"
+                // className="flex-shrink-0 flex flex-col items-center pt-4 p-2 bg-white shadow-lg min-w-[70vw] md:min-w-0 md:w-full"
+                className="flex-shrink-0 flex flex-col items-center pt-4 p-2 bg-white shadow-lg min-w-[70vw] md:min-w-0 md:w-full transition-colors duration-300 hover:bg-red-100"
+
               >
                 <img src={feature.icon} alt={feature.title} className="text-red-600 text-5xl mb-4 h-16 w-16" />
-                <h3>{feature.title}</h3>
-                <p>{feature.description}</p>
+                <h6 className='text-sm'>{feature.title}</h6>
+                <h6 className='text-sm'>{feature.description}</h6>
               </div>
             ))}
           </div>

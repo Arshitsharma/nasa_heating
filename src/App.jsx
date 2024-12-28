@@ -21,7 +21,7 @@ function App() {
   // Memoize route components to avoid unnecessary re-renders
   const routes = useMemo(
     () => [
-      { path: '/nasa_heating', element: <HomePage /> },
+      { path: '/nasa_heating/', element: <HomePage /> },
       { path: '/heating/gas-furnaces', element: <GasFurnace /> },
       { path: '/air-conditioning/central-ac', element: <CentralAc /> },
       { path: '/air-conditioning/ductless-systems-&-heat-pumps', element: <DuctlessAc /> },

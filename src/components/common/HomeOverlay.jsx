@@ -23,7 +23,7 @@ export const HomeOverlay = ({ imageUrl, highlightText, heading, description, but
           <div className="w-1/3 h-1 bg-red-600 mb-4"></div>
           
           <h1 className="text-3xl font-bold mb-4">{heading}</h1>
-          <p className="mb-4">{description}</p>
+          <h3 className="text-xl mb-4">{description}</h3>
           <a
             href={buttonLink}
             className="bg-red-600 text-white py-2 px-4 hover:bg-red-700"
