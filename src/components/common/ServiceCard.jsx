@@ -10,7 +10,7 @@ const ServiceCard = ({ icon, title, description }) => {
           className="h-16 object-contain"
         />
       </div>
-      <h5 className="text-gray-800 font-bold text-base sm:text-lg md:text-xl lg:text-lg mb-2">
+      <h5 className="text-gray-800 font-bold text-base sm:text-lg md:text-xl lg:text-lg mb-2 mt-4">
         {title}
       </h5>
       <h6 className="font-medium text-gray-800 text-sm">
