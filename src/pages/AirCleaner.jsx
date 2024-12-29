@@ -76,19 +76,24 @@ function AirCleaner() {
 
           {/* Service Cards Section */}
           <div className='bg-stone-200 py-8'>
-            <div className="px-2 sm:px-8 lg:px-96">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full sm:mx-auto lg:m-auto py-4 px-24 justify-center">
-                {servicesData.map((service, index) => (
-                <ServiceCard 
-                    key={index} 
-                    icon={service.icon} 
-                    title={service.title} 
-                    description={service.description} 
-                />
-                ))}
+            <div className="px-4 sm:px-8 lg:px-96">
+              {/* Mobile scroll container */}
+              <div className="overflow-x-auto -mx-4 px-4 sm:overflow-visible sm:mx-0">
+                <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 w-max sm:w-full mx-auto py-4 px-4 sm:px-24 justify-center">
+                  {servicesData.map((service, index) => (
+                  <div className="w-[280px] sm:w-auto">
+                    <ServiceCard 
+                        key={index} 
+                        icon={service.icon} 
+                        title={service.title} 
+                        description={service.description} 
+                    />
+                  </div>
+                  ))}
+                </div>
+              </div>
             </div>
-            </div>
-            </div>
+          </div>
         </div>
 
         {/* Footer */}

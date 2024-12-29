@@ -78,17 +78,18 @@ function DuctlessAc() {
 
           {/* Service Cards Section */}
           <div className='bg-stone-200 py-4'>
-          <div className="px-2 sm:px-8 lg:px-24 mx-2">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-full mx-4 sm:mx-8 lg:mx-60 py-4">
-              {servicesData.map((service, index) => (
-                <ServiceCard 
-                  key={index} 
-                  icon={service.icon} 
-                  title={service.title} 
-                  description={service.description} 
-                />
-              ))}
-            </div>
+            <div className="px-2 sm:px-8 lg:px-24 mx-2">
+              <div className="flex overflow-x-auto sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-full mx-4 sm:mx-8 lg:mx-60 py-4">
+                {servicesData.map((service, index) => (
+                  <div key={index} className="flex-shrink-0 w-[280px] sm:w-auto">
+                    <ServiceCard 
+                      icon={service.icon} 
+                      title={service.title} 
+                      description={service.description} 
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

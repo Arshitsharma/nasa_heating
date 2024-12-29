@@ -65,18 +65,19 @@ function Thermostat() {
           {/* Service Cards Section */}
           <div className='bg-stone-200 py-8'>
             <div className="px-4 sm:px-8 lg:px-80">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-5xl mx-4 sm:mx-10 md:mx-20 lg:mx-60 py-4 justify-center">
+              <div className="flex overflow-x-auto sm:grid sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-5xl mx-4 sm:mx-10 md:mx-20 lg:mx-60 py-4 no-scrollbar">
                 {servicesData.map((service, index) => (
-                <ServiceCard 
-                    key={index} 
-                    icon={service.icon} 
-                    title={service.title} 
-                    description={service.description} 
-                />
+                  <div key={index} className="flex-shrink-0 w-[280px] sm:w-auto">
+                    <ServiceCard 
+                      icon={service.icon} 
+                      title={service.title} 
+                      description={service.description} 
+                    />
+                  </div>
                 ))}
+              </div>
             </div>
-            </div>
-            </div>
+          </div>
         </div>
 
         {/* Footer */}
