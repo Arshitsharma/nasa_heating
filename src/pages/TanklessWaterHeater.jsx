@@ -71,13 +71,13 @@ function TanklessWaterHeater() {
   return (
     <>
       <div className="flex flex-col min-h-screen">
-        {/* Apply padding to avoid overlap */}
-        <div className="flex-grow pt-16"> {/* pt-16 ensures content doesn't overlap with navbar */}
+        {/* Changed padding to be responsive */}
+        <div className="flex-grow pt-16 md:pt-24 mt-6">
           <SectionWithOverlay
             imageUrl={TanklessWaterBanner}
             highlightText="TANK LESS WATER HEATERS"
-            heading="WATER HEATING IS THE SECOND HIGHEST ENERGY EXPENSE IN MOST HOMES"
-            description="Find out how you keep running costs in check"
+            heading="UP TO 98% EFFICIENCY WITH ON-DEMAND WATER HEATING"
+            description="Find out what this means to you in savings"
             buttonText="Call: 416-879-7198"
             buttonLink="#"
           />

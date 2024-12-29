@@ -20,17 +20,16 @@ import FurnaceImg from '../assets/products/gas-piping.jpg';
 function GasPiping() {
   const sections = [
     {
-      title: "The most efficient way to fuel your heating applications",
+      title: "The most efficient way to fuel your heating",
       paragraphs: [
-        "Come April and Ontarians get ready for sunny & warm weather, with outdoor BBQs and pool openings, and around the beginning of October all homeowners start ring up their home heating systems.",
-        "Natural gas is the least expensive and most efcient way to fuel a BBQ, Pool Heater, Gas Furnace,Boiler, gas stove, water heater, re-place etc, to name a few.",
+        "Come April and Ontarians get ready for sunny weather with outdoor BBQs and pool openings. By October all homeowners start firing up their home heating systems.",
+        "Natural gas is the least expensive and most efficient way to fuel a BBQ, Pool Heater, Gas Furnace, Boiler, Gas Stove, Water Heater, Fireplace etc, to name a few.",
         ]
     },
     {
       title: "Assurance of a job done right, always!",
       paragraphs: [
-        "But ensuring safe gas supply requiresexpertise. We employ certified & experienced gas fitters for all types of natural gas line work with pressure testing and tagging.",
-        "Operating costs, efficiency and correct sizing are some critical considerations that can help you avoid problems like short cycling, noisy operation, uneven temperatures, and high gas bills.",
+        "Ensuring safe gas supply requires expertise. We employ certified & experienced gas ﬁtters for all types of natural gas line work with pressure testing and tagging.",
         "We assess your requirement and your application and accordingly suggest the appropriate piping for your needs.",
       ]
     },
@@ -70,19 +69,13 @@ function GasPiping() {
   return (
     <>
       <div className="flex flex-col min-h-screen">
-        
-        {/* Fixed Navbar */}
-        {/* <div className="fixed top-0 left-0 right-0 bg-white shadow-lg">
-          <Navbar/>
-        </div> */}
- 
-        {/* Apply padding to avoid overlap */}
-        <div className="flex-grow pt-16"> {/* pt-16 ensures content doesn't overlap with navbar */}
+        {/* Changed padding to be responsive */}
+        <div className="flex-grow pt-16 md:pt-24 mt-6">
           <SectionWithOverlay
             imageUrl={GasPipingBannerImg}
             highlightText="GAS PIPING"
             heading="PRESSURE TESTED &TAGGED GAS PIPING FOR INCIDENT FREE COMFORT"
-            description=""
+            description="Get in touch now for an estimate"
             buttonText="Call: 416-879-7198"
             buttonLink="#"
           />

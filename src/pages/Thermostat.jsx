@@ -19,11 +19,11 @@ function Thermostat() {
       title: "Programmable Smart Wi-Fi Thermostats",
       paragraphs: [
         "These thermostats allow you to monitor and adjust your home's temperature from anywhere in the world, using your mobile devices.",
-        "The smart Wi-Fi thermostat's simple setup menu guides you through user friendly screens to get your 7-day program up and running and keep your home environment comfortable.",
         "The smart thermostats learn your heating and cooling cycle times to deliver the right temperature when you want it. This permits energy savings without compromising comfort.",
         "Advanced Fan Control - Allows timed air circulation and helps minimize temperature differences in areas within your home.",
-        "Auto Alerts - Extreme temperature alerts, problem with the heating or cooling system and lter change reminders sent to your mobile devices so that you are able to take timely & corrective action.",
+        "Auto Alerts - Extreme temperature alerts, problem with the heating or cooling system and filter change reminders sent to your mobile devices so that you are able to take timely & corrective action.",
         "Locking Touchscreen - Advanced password protected locking features provide security and prevent unauthorized access to the thermostat.",
+        "It is recommended that these thermostats are installed by licensed and trained technicians, as they control your gas furnace."
     ]   
     },
   ];
@@ -34,7 +34,7 @@ function Thermostat() {
     {
       icon: BuyingAdviceIcon,
       title: 'Buying Advice',
-      description: 'Talk to us for help in choosing the right Humidifier.'
+      description: 'Talk to us for help in choosing the right Smart Thermostat.'
     },
     {
       icon: ExpertIcon,
@@ -46,11 +46,8 @@ function Thermostat() {
   return (
     <>
       <div className="flex flex-col min-h-screen">
-        {/* Fixed Navbar */}
-
-
-        {/* Apply padding to avoid overlap */}
-        <div className="flex-grow pt-16"> {/* pt-16 ensures content doesn't overlap with navbar */}
+        {/* Changed padding to be responsive */}
+        <div className="flex-grow pt-16 md:pt-24 mt-6">
           <SectionWithOverlay
             imageUrl={ThermostatBanner}
             highlightText="THERMOSTATS"
@@ -59,7 +56,11 @@ function Thermostat() {
             buttonText="Call: 416-879-7198"
             buttonLink="#"
           />
-          <FurnaceInfoSection sections={sections} imageUrl={imageUrl} />
+          <FurnaceInfoSection 
+            sections={sections} 
+            imageUrl={imageUrl} 
+            bottomText="We install, service & repair all brands of thermostats, including - Ecobee, Nest, Honeywell, White Rodgers, Sensi etc."
+            />
 
           {/* Service Cards Section */}
           <div className='bg-stone-200 py-8'>

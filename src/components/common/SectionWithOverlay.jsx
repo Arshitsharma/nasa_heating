@@ -13,7 +13,7 @@ export const SectionWithOverlay = ({ imageUrl, highlightText, heading, descripti
 
       {/* Overlay Box Positioned at the Bottom */}
       <div className="absolute bottom-0 left-0 w-full flex justify-start">
-        <div className="bg-black bg-opacity-70 text-white p-8 max-w-sm w-full mx-[60] md:mx-[60px] lg:mx-60">
+        <div className="bg-black bg-opacity-70 text-white  py-8 px-4 max-w-sm w-full mx-[60] md:mx-[60px] lg:mx-60">
           {/* Conditionally render the highlightText if it exists */}
           {highlightText && (
             <div className="w-full flex justify-start">

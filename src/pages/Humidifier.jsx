@@ -17,24 +17,24 @@ function Humidifier() {
     {
       title: "Heat is your friend, dryness the enemy!",
       paragraphs: [
-        "Humidification, or the process of adding moisture to the air is one of the most important aspects of total indoor comfort, yet it's one of the least understood.",
+        "Humidification is one of the most important aspects of total indoor comfort.",
         "Physicians and other experts often recommend humidity control to prevent the damaging effects of dry air, like higher likelihood of getting colds, flu and other upper respiratory ailments.",
-        "According to The American Society of Otolaryngology, dry air can make people more susceptible to infection. In addition, drier air can also aggravate allergy and asthma symptoms.",
-        "Low humidity can cause home damage. It causes walls, woodwork, and your beautiful hardwood floors to crack. Electronics can fall prey to static electric charges, requiring expensive repair or replacement."
+        "Dry air can make people more susceptible to infections. Dry air can also aggravate allergy and asthma symptoms.",
+        "Low humidity can also cause home damage. It causes walls, woodwork, and hardwood floors to crack and shrink. Electronics too can fall prey to static electricity, requiring expensive repairs or worse."
        ]
     },
     {
       title: "Why Choose a Whole-Home Humidifier?",
       paragraphs: [
-        "Installed directly to your home's central heating and cooling system, a whole-home humidifier provides comfort, unlike portable units that only address certain rooms.",
-        "Too much humidity can be as much of a problem as too little humidity. Unlike portable units, a whole-home humidifier continually monitors relative humidity levels and then delivers the perfect amount of moisture to the air throughout your entire home.",
+        "Installed directly to your home's central heating and cooling system, a whole-home humidifier provides comfort, unlike portable units that only humidify the rooms they are placed in.",
+        "Too much humidity can be as much of a problem as too little. Unlike portable units, a whole-home humidifier continually monitors relative humidity levels and delivers the perfect amount of moisture to the air throughout your entire home.",
 
         ]
     },
     {
         title: "Smart humidifiers provide peace of mind",
         paragraphs: [
-          "The Smart Automatic Humidier is the world’s first computer-equipped, completely automated, “no touch” humidifier. It never needs constant manual adjustments. The advanced computer technology measures the outdoor temperature and indoor humidity over 86,000 times a day and continually adjusts your homes indoor humidity to its optimum level. It also performs at a level three times more accurate and four times more reliable than other humidifiers."
+          "The Smart Automatic Humidifier is a completely automated, “no touch” humidifier, never needing manual adjustments. The advanced technology measures the outdoor temperature and indoor humidity over 86,000 times a day and maintains your home humidity levels to optimum. It is three times more accurate and four times more reliable than other humidifiers."
          ]
       },
   ];
@@ -58,8 +58,8 @@ function Humidifier() {
   return (
     <>
       <div className="flex flex-col min-h-screen">
-        {/* Apply padding to avoid overlap */}
-        <div className="flex-grow pt-16"> {/* pt-16 ensures content doesn't overlap with navbar */}
+        {/* Changed padding to be responsive */}
+        <div className="flex-grow pt-16 md:pt-24 mt-6">
           <SectionWithOverlay
             imageUrl={HumidifierBanner}
             highlightText="HUMIDIFIERS"
@@ -68,7 +68,12 @@ function Humidifier() {
             buttonText="Call: 416-879-7198"
             buttonLink="#"
           />
-          <FurnaceInfoSection sections={sections} imageUrl={imageUrl} />
+          <FurnaceInfoSection 
+              sections={sections} 
+            imageUrl={imageUrl} 
+            bottomText="We install, service & repair all brands of humidiers (Flow thru and Steam type), including -
+                        Aprilaire, General Aire etc." 
+          />
  
           {/* Service Cards Section */}
           <div className="bg-stone-200 py-2">

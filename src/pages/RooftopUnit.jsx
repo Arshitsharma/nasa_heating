@@ -17,7 +17,7 @@ function RooftopUnit() {
     {
       title: "Maintenance & Repair",
       paragraphs: [
-          "Regular maintenance reduces your operating and energy costs, improves safety, ensures reliability and extends the life of the HVAC unit. The additional operating cost of a rooftop unit low on refrigerant or having dirty air-lters and coils can exceed the cost of an annual maintenance contract.",
+          "Regular maintenance reduces your operating and energy costs, improves safety, ensures reliability and extends the life of the HVAC unit. The additional operating cost of a rooftop unit low on refrigerant or having dirty air-filters and coils can exceed the cost of an annual maintenance contract.",
         ]
     },
     {
@@ -41,37 +41,39 @@ function RooftopUnit() {
     {
       icon: AssessmentIcon,
       title: 'Assessment',
-      description: 'We assess and determine the right Whole-home Purifier for you'
+      description: 'We assess and determine the right maintenance plan for you'
     },
     {
-      icon: BuyingOptionsIcon,
-      title: 'Buying Options',
-      description: 'Then we provide you with unbiased buying choices from leading brands'
+      icon: RepairAndServiceIcon,
+      title: 'Repair & Service',
+      description: 'Factory trained technicians to service all makes and models'
     },
     {
         icon: RepairAndServiceIcon,
-        title: 'Repair & Service',
-        description: 'Factory trained technicians to service all makes and models'
+        title: 'Expert Installation',
+        description: 'Factory trained technicians ensure perfect installation'
       },
   ];
 
   return (
     <>
       <div className="flex flex-col min-h-screen">
-        {/* Fixed Navbar */}
-
-
-        {/* Apply padding to avoid overlap */}
-        <div className="flex-grow pt-16"> {/* pt-16 ensures content doesn't overlap with navbar */}
+        {/* Changed padding to be responsive */}
+        <div className="flex-grow pt-16 md:pt-24 mt-6">
           <SectionWithOverlay
-            imageUrl={RooftopUnitBanner }
-            highlightText="ROOFTOP UNITS"
-            heading="WEATHER TIGHT HOMES TRAP HIGHER CONCENTRATION OF TOXIC GASES INSIDE"
-            description="We can assess and devise an optimal solution for your home"
+            imageUrl={RooftopUnitBanner}
+            highlightText="ROOFTOP UNITS & UNIT HEATERS"
+            heading="WORRY FREE REPAIR & MAINTENANCE SERVICES"
+            description="Get in touch today"
             buttonText="Call: 416-879-7198"
             buttonLink="#"
           />
-          <FurnaceInfoSection sections={sections} imageUrl={imageUrl} />
+          <FurnaceInfoSection 
+            sections={sections} 
+            imageUrl={imageUrl} 
+            topText="We provide professional service, trouble-shooting and repair of Rooftop HVAC Units & Unit Heaters across the GTA."
+            bottomText="We install, service & repair all brands of Rooftop Units including - Lennox, Carrier, York, Trane, Keeprite etc."
+          />
 
           {/* Service Cards Section */}
           <div className='bg-stone-200 py-8'>

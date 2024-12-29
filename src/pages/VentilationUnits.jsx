@@ -19,10 +19,9 @@ function VentilationUnits() {
     {
       title: "Ventilation is as critical as Heating or Cooling",
       paragraphs: [
-        "A whole-home ventilation system is designed to bring in fresh outside air into the home, removing stale and humid air. It also exchanges odors caused by pets, cooking and everyday activities with fresh outdoor air.",
-        "It runs the Furnace fan to circulate the fresh air throughout the home. The controller is designed to meet the ASHRAE 62.2-2010 standard for ventilation.",
-        "The ventilation mode selection allows for time only operation or for temperature and humidity limits to be applied to the incoming fresh air.",
-        "Contact us to nd about how we can improve your existing home with our quality products and services.",
+        "A whole-home ventilation system is designed to bring in fresh outside air into the home, removing stale and humid air. It also removes VOCs, odors caused by pets, cooking and everyday activities.",
+        "The ventilation unit runs the Furnace fan to circulate the fresh air throughout the home. The controller is designed to meet the ASHRAE 62.2-2010 standard for ventilation.",
+        "Contact us to find about how we can improve your existing home with our quality products and services.",
         ]
     },
   ];
@@ -43,28 +42,29 @@ function VentilationUnits() {
     },
     {
         icon: RepairAndServiceIcon,
-        title: 'Repair & Service',
-        description: 'Factory trained technicians to service all makes and models'
+        title: 'Expert Installation',
+        description: 'Factory trained technicians ensure perfect installation'
       },
   ];
 
   return (
     <>
       <div className="flex flex-col min-h-screen">
-        {/* Fixed Navbar */}
-
-
-        {/* Apply padding to avoid overlap */}
-        <div className="flex-grow pt-16"> {/* pt-16 ensures content doesn't overlap with navbar */}
+        {/* Changed padding to be responsive */}
+        <div className="flex-grow pt-16 md:pt-24 mt-6">
           <SectionWithOverlay
             imageUrl={VentilationUnitBanner}
             highlightText="VENTILATION UNITS"
-            heading="WEATHER TIGHT HOMES TRAP HIGHER CONCENTRATION OF TOXIC GASES INSIDE"
+            heading="WEATHER TIGHT HOMES TRAP HIGHER CONCENTRATION OF TOXIC VOCs INSIDE"
             description="We can assess and devise an optimal solution for your home"
             buttonText="Call: 416-879-7198"
             buttonLink="#"
           />
-          <FurnaceInfoSection sections={sections} imageUrl={imageUrl} />
+          <FurnaceInfoSection 
+            sections={sections} 
+            imageUrl={imageUrl} 
+            bottomText="We install, service & repair all brands of Ventilation Units including - Honeywell, Aprilaire, VanEE HRV Systems etc."
+            />
 
           {/* Service Cards Section */}
           <div className='bg-stone-200 py-8'>

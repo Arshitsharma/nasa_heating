@@ -40,7 +40,8 @@ export const Navbar = () => {
     'HEATING': 
     { path: '/heating', 
       subItems: [
-        { label: 'GAS FURNACES', path: '/heating/gas-furnaces' }
+        { label: 'GAS FURNACES', path: '/heating/gas-furnaces' },
+        { label: 'TANKLESS COMBI BOILERS', path: '/heating/tankless-combi-boilers' }
       ] 
     },
     'AIR CONDITIONING': {
@@ -48,21 +49,22 @@ export const Navbar = () => {
       subItems: [
         { label: 'CENTRAL AIR CONDITIONERS', path: '/air-conditioning/central-ac' },
         { label: 'DUCTLESS SYSTEMS & HEAT PUMPS', path: '/air-conditioning/ductless-systems-&-heat-pumps' },
+        { label: 'HEAT PUMPS', path: '/air-conditioning/heat-pumps' },
       ],
     },
-    'WATER HEATER': {
+    'WATER HEATERS': {
       path: '/water-heaters',
       subItems: [
         { label: 'STORAGE WATER HEATERS', path: '/water-heaters/storage-water-heaters' },
         { label: 'TANKLESS WATER HEATERS', path: '/water-heaters/tankless-water-heaters' },
       ],
     },
-    'BOILERS': { 
-      path: '/boilers', 
-      subItems: [
-        { label: 'TANKLESS COMBI BOILERS', path: '/boilers/tankless-combi-boilers' }
-      ] 
-    },
+    // 'BOILERS': { 
+    //   path: '/boilers', 
+    //   subItems: [
+    //     { label: 'TANKLESS COMBI BOILERS', path: '/boilers/tankless-combi-boilers' }
+    //   ] 
+    // },
     'INDOOR AIR QUALITY': { 
       path: '/indoor-air-quality', 
       subItems: [
@@ -73,7 +75,7 @@ export const Navbar = () => {
       ] 
       
     },
-    'ROOFTOP UNITS': { 
+    'COMMERCIAL HVAC': { 
       path: '/rooftop-units', 
       subItems: [
       ] 
@@ -188,7 +190,7 @@ export const Navbar = () => {
       
     {/* <div className='flex items-center justify-between max-w-6xl mx-auto px-4 sm:px-6 lg:px-0 pb-2 gap-4 sm:gap-8 ml-2 sm:ml-8 md:ml-60'> */}
     <div className="flex items-center justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-2">
-      <div className={`${isOpen ? 'block' : 'hidden'} md:flex md:justify-center md:space-x-12 mt-2 text-left`}>
+      <div className={`${isOpen ? 'block' : 'hidden'} md:flex md:justify-center md:space-x-16 mt-2 text-left`}>
         {Object.keys(dropdownOptions).map((item) => (
           <div key={item} className="relative">
             {/* <span

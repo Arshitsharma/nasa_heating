@@ -46,7 +46,7 @@ function DuctlessAc() {
     {
       icon: EmergencyCallIcon, // Replace with actual icon path
       title: 'Emergency Calls',
-      description: 'Call our Rapid Response number in case your heating goes down.'
+      description: 'Rapid Response number in case your Air Conditioning goes down.'
     }
     
   ];
@@ -59,8 +59,8 @@ function DuctlessAc() {
           <Navbar/>
         </div> */}
 
-        {/* Apply padding to avoid overlap */}
-        <div className="flex-grow pt-16"> {/* pt-16 ensures content doesn't overlap with navbar */}
+        {/* Changed padding to be responsive */}
+        <div className="flex-grow pt-16 md:pt-24 mt-6">
           <SectionWithOverlay
             imageUrl={DuctlessAcBanner}
             highlightText="DUCTLESS SYSTEMS & HEAT PUMPS"
@@ -69,10 +69,14 @@ function DuctlessAc() {
             buttonText="Call: 416-879-7198"
             buttonLink="#"
           />
-          <FurnaceInfoSection sections={sections} imageUrl={imageUrls} />
+          <FurnaceInfoSection 
+          sections={sections} 
+          imageUrl={imageUrls} 
+          bottomText="We install, service and repiar all brands of ductless units, 
+                      including - Mitsubishi, MITS AIR etc." 
+          />
 
           {/* Service Cards Section */}
-          
           <div className='bg-stone-200 py-4'>
           <div className="px-2 sm:px-8 lg:px-24 mx-2">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-full mx-4 sm:mx-8 lg:mx-60 py-4">

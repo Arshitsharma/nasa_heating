@@ -16,17 +16,17 @@ export const Redtag = () => {
       </div>
 
       {/* Container Box */}
-      <div className="max-w-screen-lg mx-auto border shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out mt-6 sm:mt-8 md:mt-10">
+      <div className="select-none max-w-screen-lg mx-auto border shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out mt-6 sm:mt-8 md:mt-10">
         <div className="text-center text-base sm:text-lg md:text-xl font-bold p-3 sm:p-4">
           Following are some situations when a Red Tag may be issued:
         </div>
         {/* List of Issues */}
-        <div className="mt-2 sm:mt-4 px-3 sm:px-4">
-          <ol className="list-decimal list-inside text-sm sm:text-base md:text-lg grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-3 md:gap-4">
+        <div className="mt-2 sm:mt-4 px-3 sm:px-4 mb-4">
+          <ol className="list-decimal marker:mr-4 list-outside pl-8 text-sm sm:text-base md:text-lg columns-1 md:columns-2 gap-x-32 space-y-2 sm:space-y-3 md:space-y-4">
             <li>Unsafe Installation - Improper Venting, Appliance over-sized or over heating</li>
             <li>Delayed combustion due to lack of maintenance</li>
             <li>Gas leaking from the supply piping</li>
-            <li>Carbon Monoxide Leaks or presence detected in the home</li>
+            <li>Carbon Monoxide Leaks or presence detected</li>
             <li>Lack of Combustion Air</li>
             <li>Defective / Compromised Heat Exchanger</li>
             <li>Improper Accessibility</li>

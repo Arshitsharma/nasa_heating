@@ -19,16 +19,16 @@ function AirCleaner() {
     {
       title: "Strange but true!",
       paragraphs: [
-       "The EPA has named indoor air pollution as one of the top ve environmental risks to public health.",
+       "The EPA has named indoor air pollution as one of the top five environmental risks to public health.",
        "Modern weather-tight homes trap airborne particles inside, so everyday contaminants accumulate and their concentration keeps increasing. Just one cubic foot of air can have more than 30 million pollutants, i.e. 100 times more than the air outside. With the amount of time spent indoors, it's no wonder so many people suffer from allergies, asthma and other respiratory illnesses.",
-       "Pollen, cat dander, tobacco smoke particles, mold spores and household dust all contribute to poor indoor air quality which is ranked among the top ve environmental risks to public health."
+       "Pollen, cat dander, tobacco smoke particles, mold spores, VOCs and household dust all contribute to poor indoor air quality."
         ]
     },
     {
       title: "Can you control Indoor Air Quality?",
       paragraphs: [
-        "Yes, we can help you control the quality of the air with a whole-home air purier. Unlike standard portable air puriers, these are installed as part of your home's central heating and cooling system and work efciently to remove pollutants from throughout your entire home.",
-        "It will also keep your air conditioner's cooling coil clean and your furnace working more efciently,saving energy, minimizing repair costs and extending service life."
+        "Yes, we can help you control the quality of the air with a whole-home air purifier. Unlike standard portable air purifiers, these are installed as part of your home's central heating and cooling system and work efficiently to remove pollutants from throughout your entire home.",
+        "It will also keep your air conditioner's cooling coil clean and your furnace working more efficiently, saving energy, minimizing repair costs and extending service life."
         ]
     },
   ];
@@ -57,11 +57,9 @@ function AirCleaner() {
   return (
     <>
       <div className="flex flex-col min-h-screen">
-        {/* Fixed Navbar */}
 
-
-        {/* Apply padding to avoid overlap */}
-        <div className="flex-grow pt-16"> {/* pt-16 ensures content doesn't overlap with navbar */}
+        {/* Changed padding to be responsive */}
+        <div className="flex-grow pt-16 md:pt-24 mt-6">
           <SectionWithOverlay
             imageUrl={AirCleanerBanner}
             highlightText="AIR CLEANERS & FILTERS"
@@ -70,7 +68,11 @@ function AirCleaner() {
             buttonText="Call: 416-879-7198"
             buttonLink="#"
           />
-          <FurnaceInfoSection sections={sections} imageUrl={imageUrl} />
+          <FurnaceInfoSection 
+            sections={sections} 
+            imageUrl={imageUrl} 
+            bottomText="We install, service & repair all brands of Air Cleaners including - Aprilaire, Trane, Carrier, Electroaire etc."
+            />
 
           {/* Service Cards Section */}
           <div className='bg-stone-200 py-8'>

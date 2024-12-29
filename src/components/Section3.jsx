@@ -63,7 +63,7 @@ export const Section3 = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex-shrink-0 flex flex-col items-center pt-4 p-2 bg-white shadow-lg shadow-neutral-400 w-[250px] sm:w-[280px] md:w-full transition-colors duration-300 hover:bg-red-100"
+              className="select-none flex-shrink-0 flex flex-col items-center pt-4 p-2 bg-white shadow-lg shadow-neutral-400 w-[250px] sm:w-[280px] md:w-full transition-colors duration-300 hover:bg-red-100"
             >
               <img src={feature.icon} alt={feature.title} className="text-red-600 text-5xl mb-1 h-16 w-16" />
               <h6 className='text-sm text-center'>{feature.title}</h6>

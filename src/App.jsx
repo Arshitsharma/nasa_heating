@@ -23,11 +23,12 @@ function App() {
     () => [
       { path: '/nasa_heating/', element: <HomePage /> },
       { path: '/heating/gas-furnaces', element: <GasFurnace /> },
+      { path: '/heating/tankless-combi-boilers', element: <TanklessCombiBoiler /> },
       { path: '/air-conditioning/central-ac', element: <CentralAc /> },
       { path: '/air-conditioning/ductless-systems-&-heat-pumps', element: <DuctlessAc /> },
       { path: '/water-heaters/storage-water-heaters', element: <StorageWaterHeater /> },
       { path: '/water-heaters/tankless-water-heaters', element: <TanklessWaterHeater /> },
-      { path: '/boilers/tankless-combi-boilers', element: <TanklessCombiBoiler /> },
+      // { path: '/boilers/tankless-combi-boilers', element: <TanklessCombiBoiler /> },
       { path: '/indoor-air-quality/humidifiers', element: <Humidifier /> },
       { path: '/indoor-air-quality/thermostats', element: <Thermostat /> },
       { path: '/indoor-air-quality/air-cleaner', element: <AirCleaner /> },

@@ -21,22 +21,21 @@ function Heating() {
       paragraphs: [
         "Heating with Natural Gas is significantly less expensive than oil, propane & electricity.",
         "Your investment in a High-Efficiency natural gas furnace is recovered through lower operating costs over the furnace's 15 to 20 year life span.",
-        "If natural gas is available on your street, we can help you switch to a natural gas furnace, with ease."
+        "If natural gas is available on your street, we can help you switch with ease."
       ]
     },
     {
       title: "Which furnace is right for you?",
       paragraphs: [
-        "Considering that a gas furnace is a long-term investment, choosing the right furnace becomes important.",
-        "Operating costs, efficiency and correct sizing are some critical considerations that can help you avoid problems like short cycling, noisy operation, uneven temperatures, and high gas bills.",
-        "We can help you narrow down on the right type of furnace, whether - Single Stage, Two Stage & Modulating (Multiple Stage Operation), with appropriate sizing for your requirement and finally let you choose from the makes that make the grade."
+        "Gas furnace is a long term investment so choosing the right furnace is important.",
+        "Operating costs, efficiency and 'correct sizing' are some critical considerations that can help you avoid problems like short cycling, noisy operation, uneven temperatures and high gas bills.",
+        "We can help you identify the right furnace - Single Stage, Two Stage & Modulating (Multiple Stage Operation), with appropriate sizing for your home and then you can choose the product that best fits your budget."
       ]
     },
     {
       title: "When heating goes down in winters?",
       paragraphs: [
-        "Call us for Fast Emergency Heating Service (Gas Furnace & Boiler) in the GTA and the surrounding areas.",
-        "We respond quickly to your emergency heating situation."
+        "Call us for Emergency Heating Service (Gas Furnace & Boiler) in the GTA and the surrounding areas. Our technicians are on call 24/7, ready to address your emergency."
       ]
     }
   ];
@@ -58,8 +57,8 @@ function Heating() {
     },
     {
       icon: RentingIcon,
-      title: 'Renting',
-      description: 'Trouble free renting options to decide what works best for you.'
+      title: 'Financing',
+      description: 'Trouble free Finance options to decide what works best for you.'
     },
     {
       icon: RepairAndServiceIcon,
@@ -69,14 +68,15 @@ function Heating() {
     {
       icon: EmergencyCallIcon,
       title: 'Emergency Calls',
-      description: 'Call our Rapid Response number in case your heating goes down.'
+      description: 'Rapid Response number in case your heating goes down.'
     }
   ];
 
   return (
     <>
       <div className="flex flex-col min-h-screen">
-        <div className="flex-grow pt-16">
+        {/* Changed padding to be responsive */}
+        <div className="flex-grow pt-16 md:pt-24 mt-6">
           <SectionWithOverlay
             imageUrl={BannerImg}
             highlightText="Gas Furnace"
@@ -86,7 +86,13 @@ function Heating() {
             buttonLink="#"
           />
 
-          <FurnaceInfoSection sections={sections} imageUrl={imageUrl} /> {/* Pass imageUrl */}
+          <FurnaceInfoSection 
+            sections={sections} 
+            imageUrl={imageUrl}
+            bottomText="We install, service and repair all brands of Gas furnaces, 
+                        including- Keeprite, Arcoaire,Lennox, Carrier, York, Trane, 
+                        Amana and Goodman etc." 
+          />
 
           {/* Service Cards Section */}
           
@@ -109,7 +115,7 @@ function Heating() {
       {servicesData.map((service, index) => (
         <div
           key={index}
-          className="flex-shrink-0 w-full sm:w-auto" // Ensures full width on mobile
+          className="flex-shrink-0 w-[280px] sm:w-full" // Fixed width on mobile, full width on larger screens
         >
           <ServiceCard 
             icon={service.icon} 

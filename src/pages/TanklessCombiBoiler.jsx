@@ -21,7 +21,7 @@ import RentingIcon from '../assets/icons/icon-renting.svg';
 function TanklessCombiBoiler() {
   const sections = [
     {
-      title: "Are you thinking of upgrading your boiler at home?",
+      title: "Thinking of upgrading your boiler?",
       paragraphs: [
         "We can help you choose a high efficiency, wall mounted boiler that can help you save up to 30-50% on your annual gas bill and free-up valuable floor space.",
         "We can also replace your old, unsightly cast iron radiators with modern units."
@@ -39,10 +39,9 @@ function TanklessCombiBoiler() {
         ]
     },
     {
-        title: "Timely and regular maintenance of your existing boiler is important",
+        title: "Regular maintenance of your boiler is important",
         paragraphs: [
-          "Regular maintenance reduces boiler operating and energy costs, improves safety, ensures reliability and extends life of the boiler.",
-          "Service should be performed by a qualified technician trained and licensed to maintain & repair the boiler."
+          "Timely and regular maintenance reduces boiler operating and energy costs, improves safety,ensures reliability, extends life of the boiler, indentify and eliminate potential problems in time.",
          ]
       },
   ];
@@ -63,8 +62,8 @@ function TanklessCombiBoiler() {
     },
     {
       icon: RentingIcon,
-      title: 'Renting',
-      description: 'Trouble free renting options to decide what works best for you.'
+      title: 'Financing',
+      description: 'Trouble free Finance options to decide what works best for you.'
     },
     {
       icon: RepairAndServiceIcon,
@@ -74,7 +73,7 @@ function TanklessCombiBoiler() {
     {
       icon: EmergencyCallIcon,
       title: 'Emergency Calls',
-      description: 'Call our Rapid Response number in case your heating goes down.'
+      description: 'Rapid Response number in case your heating goes down.'
     }
   ];
 
@@ -86,17 +85,25 @@ function TanklessCombiBoiler() {
           <Navbar/>
         </div> */}
 
-        {/* Apply padding to avoid overlap */}
-        <div className="flex-grow pt-16"> {/* pt-16 ensures content doesn't overlap with navbar */}
+        {/* Changed padding to be responsive */}
+        <div className="flex-grow pt-16 md:pt-24 mt-6">
           <SectionWithOverlay
             imageUrl={TanklessBoilerBanner}
-            highlightText="TANK LESS COMBI BOILERS"
+            highlightText="TANKLESS COMBI BOILERS"
             heading="A HIGH EFFICIENCY BOILER CAN SAVE YOU 30-50% ON YOUR ANNUAL GAS BILLS"
             description="Find out how you too can benefit"
             buttonText="Call: 416-879-7198"
             buttonLink="#"
           />
-          <FurnaceInfoSection sections={sections} imageUrl={imageUrl} />
+          <FurnaceInfoSection 
+            sections={sections} 
+            imageUrl={imageUrl}
+            moreText="Service should be performed by a qualified technician trained and 
+                      licensed to maintain & repair the boiler."
+            bottomText="We install, service & repair all brands of residential or commercial 
+                        Combi Boilers, including -Navien, Noritz, Bradford White, Rinnai, 
+                        Viessmann, Bosch etc."  
+          />
 
           {/* Service Cards Section */}
           <div className='bg-stone-200 py-8'>

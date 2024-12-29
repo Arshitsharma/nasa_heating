@@ -16,17 +16,17 @@ import RentingIcon from '../assets/icons/icon-renting.svg';
 function CentralAc() {
   const sections = [
     {
-      title: "Modern Air Conditioning extends beyond comfort to efficiency and health",
+      title: "Beyond comfort to efficiency and health",
       paragraphs: [
-        "A temperature controlled environment is essential for comfort and working efficiency. But this can extend beyond controlling Temperature and Humidity to optimal Air-Movement, ventilation and Indoor Air Quality.",
-        "This makes it a job for professionals. That is how you too can beneift from our years of experience,technical expertise and trained technicians.",
+        "A temperature controlled environment is essential for comfort and working efficiency. But nowadays,this extends further to Humidity Control, Optimal Air-Movement, Ventilation and Indoor Air Quality.",
+        "This makes it a job for professionals. That is how you too can benefit from our years of experience,technical expertise and trained technicians.",
         ]
     },
     {
-      title: "This becomes even more important when you are working from home",
+      title: "Even more important if you work from home",
       paragraphs: [
-        "With working from home becoming the new normal, air conditioning and comfort at home acquiresadded signicance. Not only because it can contribute to your working efciency and energy levels,but it has health implications too.",
-        "Get in touch to and out if your system is working as per these added considerations."
+        "With working from home becoming the new normal, air-conditioning and comfort at home acquires added significance. Not only because it contributes to your working efficiency and energy levels, but it has health implications too.",
+        "Get in touch to find out if your system measures up to these added considerations."
       ]
     },
   ];
@@ -47,8 +47,8 @@ function CentralAc() {
     },
     {
       icon: RentingIcon, // Replace with actual icon path
-      title: 'Renting',
-      description: 'Trouble free renting options to decide what works best for you.'
+      title: 'Financing',
+      description: 'Trouble free Finance options to decide what works best for you.'
     },
     {
       icon: RepairAndServiceIcon, // Replace with actual icon path
@@ -58,15 +58,15 @@ function CentralAc() {
     {
       icon: EmergencyCallIcon, // Replace with actual icon path
       title: 'Emergency Calls',
-      description: 'Call our Rapid Response number in case your heating goes down.'
+      description: 'Rapid Response number in case your Air Conditioning goes down.'
     }
   ];
 
   return (
     <>
       <div className="flex flex-col min-h-screen">
-        {/* Apply padding to avoid overlap */}
-        <div className="flex-grow pt-16"> {/* pt-16 ensures content doesn't overlap with navbar */}
+        {/* Changed padding to be responsive */}
+        <div className="flex-grow pt-16 md:pt-24 mt-6">
           <SectionWithOverlay
             imageUrl={CenteralAcBanner}
             highlightText="CENTRAL AIR CONDITIONERS"
@@ -75,7 +75,12 @@ function CentralAc() {
             buttonText="Call: 416-879-7198"
             buttonLink="#"
           />
-          <FurnaceInfoSection sections={sections} imageUrl={imageUrl} />
+          <FurnaceInfoSection 
+            sections={sections} 
+            imageUrl={imageUrl} 
+            bottomText="We install, service & repair all brands of Air conditioners, including - Amana, Carrier, Lennox,
+                        York, Trane, American Standard, Keeprite and Comfortmaker etc." 
+          />
 
           {/* Service Cards Section */}
           <div className='bg-stone-200 py-8'>

@@ -21,7 +21,7 @@ function StorageWaterHeater() {
     {
       title: "Which Water Heater is right for you?",
       paragraphs: [
-        "A reliable supply of hot water is essential for any home. It also accounts for 20-25% of your energy bill.",
+        "A reliable supply of hot water is essential for any home. It also accounts for 20-25% of your annual energy bill.",
         "So assessing your requirement, analyzing usage patterns and then determining the right type and size of your new water heater is critical. We offer high-quality, high-efficiency water heaters that work great and provide a long term, trouble free service."
       ]
     },
@@ -29,7 +29,7 @@ function StorageWaterHeater() {
       title: "Should you rent or own?",
       paragraphs: [
         "Renting is a popular option, with monthly rents ranging from $25 to $50 a month, for a particular size and type of the water heater. And no worries on account of maintenance, repairs or replacements.",
-        "To buy or to rent, depends on how you look at it. Economically, over time, buying is a better deal.Since a typical water heater lasts about 12-15 years, owning beats renting after 5 to 6 years."
+        "To buy or to rent, depends on how you look at it. Economically, over time, buying is a better deal. Since a typical water heater lasts about 12-15 years, owning beats renting after 5 to 6 years."
        ]
     },
     {
@@ -46,12 +46,12 @@ function StorageWaterHeater() {
     {
       icon: AssessmentIcon,
       title: 'Assessment',
-      description: 'We assess and determine the right furnace type and size.'
+      description: 'We assess and determine the right water heater type and size for you'
     },
     {
       icon: BuyingOptionsIcon,
       title: 'Buying Options',
-      description: 'We offer unbiased buying choices from leading brands.'
+      description: 'Then we provide you with unbiased buying choices from leading brands'
     },
     {
       icon: RentingIcon,
@@ -66,14 +66,15 @@ function StorageWaterHeater() {
     {
       icon: EmergencyCallIcon,
       title: 'Emergency Calls',
-      description: 'Call our Rapid Response number in case your heating goes down.'
+      description: 'Rapid Response number in case your Water Heater goes down.'
     }
   ];
 
   return (
     <>
       <div className="flex flex-col min-h-screen">
-        <div className="flex-grow pt-16"> {/* pt-16 ensures content doesn't overlap with navbar */}
+        {/* Changed padding to be responsive */}
+        <div className="flex-grow pt-16 md:pt-24 mt-6">
           <SectionWithOverlay
             imageUrl={StorageWaterBanner}
             highlightText="STORAGE WATER HEATERS"
@@ -82,7 +83,12 @@ function StorageWaterHeater() {
             buttonText="Call: 416-879-7198"
             buttonLink="#"
           />
-          <FurnaceInfoSection sections={sections} imageUrl={imageUrl} />
+          <FurnaceInfoSection 
+            sections={sections} 
+            imageUrl={imageUrl} 
+            bottomText="We install, service & repair all brands of Residential & Commercial Water Heaters including -
+                        Bradford White, John Wood, GSW, A.O. Smith, GE etc." 
+          />
 
           {/* Service Cards Section */}
           <div className='bg-stone-200 py-8'>
