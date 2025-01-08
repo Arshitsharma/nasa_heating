@@ -108,9 +108,9 @@ function StorageWaterHeater() {
                 ))}
               </div>
             </div>
-          </div>         /
+          </div>         
         </div>
-
+        
         <div className="bg-stone-200">
         <Footer/>
         </div>

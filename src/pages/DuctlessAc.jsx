@@ -94,8 +94,9 @@ function DuctlessAc() {
           </div>
         </div>
 
-        {/* Footer */}
-        <Footer/>
+        <div className="bg-stone-200">
+          <Footer/>
+        </div>
       </div>
     </>
   );

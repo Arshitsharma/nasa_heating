@@ -1,0 +1,44 @@
+/* Import this CSS file in your Testimonials.jsx */
+
+/* Next Arrow */
+.slick-next:before {
+    color: #00000074 !important; /* red-600 */
+}
+
+/* Previous Arrow */
+.slick-prev:before {
+    color: #00000053 !important; /* red-600 */
+}
+
+/* Hover states */
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    color: #ff0404 !important; /* red-700 */
+}
+
+/* Optional: If you want to change the size */
+.slick-prev:before,
+.slick-next:before {
+    font-size: 24px !important;
+}
+
+/* Make arrows bigger */
+.slick-prev,
+.slick-next {
+    width: 60px !important;  /* Increase clickable area width */
+    height: 60px !important; /* Increase clickable area height */
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 60px !important; /* Increase arrow size (default is 20px) */
+}
+
+/* Move arrows further out */
+.testimonials-section .slick-prev {
+    left: -45px !important; /* Changed from -45px to -80px */
+}
+
+.testimonials-section .slick-next {
+    right: -45px !important; /* Changed from -45px to -80px */
+}
