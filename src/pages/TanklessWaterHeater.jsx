@@ -29,7 +29,7 @@ function TanklessWaterHeater() {
     {
       title: "Other advantages",
       paragraphs: [
-        "Software & sensors to detect water leaks and automatically turn off the ow of cold water, preventing damage to the water heater - or worse, to your home or business.",
+        "Software & sensors to detect water leaks and automatically turn off the flow of cold water, preventing damage to the water heater - or worse, to your home or business.",
         "Some Tankless brands also offer Stainless Steel Heat Exchangers that outlast Copper Heat Exchangers being less prone to corrosion, mineral deposits and leaks.",
         "In-Take Air Filters minimize dirt and debris from collecting inside the cabinet & the heat exchanger,reducing service calls.",
         "Tankless water heaters, with routine maintenance, should last 2 to 3 times longer than a tank-type water heater."

@@ -14,7 +14,7 @@ import AirCleaner from './pages/AirCleaner';
 import VentilationUnits from './pages/VentilationUnits';
 import RooftopUnit from './pages/RooftopUnit';
 import GasPiping from './pages/GasPiping';
-
+import HeatPumps from './pages/HeatPumps';
 function App() {
   const { pathname } = useLocation();
   
@@ -26,6 +26,7 @@ function App() {
       { path: '/heating/tankless-combi-boilers', element: <TanklessCombiBoiler /> },
       { path: '/air-conditioning/central-ac', element: <CentralAc /> },
       { path: '/air-conditioning/ductless-systems-&-heat-pumps', element: <DuctlessAc /> },
+      { path: '/heat-pumps', element: <HeatPumps /> },
       { path: '/water-heaters/storage-water-heaters', element: <StorageWaterHeater /> },
       { path: '/water-heaters/tankless-water-heaters', element: <TanklessWaterHeater /> },
       // { path: '/boilers/tankless-combi-boilers', element: <TanklessCombiBoiler /> },
