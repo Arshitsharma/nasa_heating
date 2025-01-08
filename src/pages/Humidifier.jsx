@@ -71,7 +71,7 @@ function Humidifier() {
           <FurnaceInfoSection 
               sections={sections} 
             imageUrl={imageUrl} 
-            bottomText="We install, service & repair all brands of humidiers (Flow thru and Steam type), including -
+            bottomText="We install, service & repair all brands of humidifiers (Flow thru and Steam type), including -
                         Aprilaire, General Aire etc." 
           />
  
