@@ -36,6 +36,15 @@ export const Testimonials = () => {
           slidesToShow: 1,
         },
       },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true
+        }
+      }
     ],
   };
 
@@ -88,7 +97,7 @@ export const Testimonials = () => {
            <Slider {...settings}>
              {testimonials.map((testimonial, index) => (
               <div key={index} className="p-4">
-                <div className="bg-white rounded-lg text-left p-6">
+                <div className="bg-white rounded-lg text-left">
                   <div className="flex text-yellow-400 text-2xl mb-4">
                     ★★★★★
                   </div>
@@ -172,7 +181,7 @@ function SamplePrevArrow(props) {
         width: "40px",
         height: "40px",
         left: "0px",
-        zIndex: 1,
+        zIndex: 2,
       }}
       onClick={onClick}
     >

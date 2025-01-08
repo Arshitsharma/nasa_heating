@@ -36,9 +36,17 @@
 
 /* Move arrows further out */
 .testimonials-section .slick-prev {
-    left: -45px !important; /* Changed from -45px to -80px */
+    left: -45px !important;
 }
 
 .testimonials-section .slick-next {
-    right: -45px !important; /* Changed from -45px to -80px */
+    right: -45px !important;
+}
+
+/* Hide arrows on mobile devices */
+@media screen and (max-width: 768px) {
+    .testimonials-section .slick-prev,
+    .testimonials-section .slick-next {
+        display: none !important;
+    }
 }
