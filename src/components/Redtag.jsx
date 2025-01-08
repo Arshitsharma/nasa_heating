@@ -5,14 +5,18 @@ export const Redtag = () => {
     <div className="bg-white py-6 sm:py-10 px-3 sm:px-4">
       {/* Title */}
       <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold">
-        Why Choose NASA Heating?
+        Red Tags
       </h2>
 
       {/* Paragraph */}
       <div className="text-center max-w-screen-lg mx-auto mt-4 sm:mt-6 text-base sm:text-lg md:text-xl">
-        We offer a full range of Heating, Ventilation, Air conditioning and Indoor air quality solutions. From furnaces, air conditioners,
-        water heaters and humidifiers to whole-home air cleaners and ventilation systems, we can help you maintain an optimum indoor
-        environment for your home and family.
+        Did you ever receive a Warning Tag or Red Tag (A or B) from your HVAC contractor or from Enbridge Gas and need help getting
+        it resolved? Our certified and licensed engineers can do it for you.
+      </div>
+
+      <div className="text-center max-w-screen-lg mx-auto mt-4 sm:mt-6 text-base sm:text-lg md:text-xl">
+        A Warning Tag or Red Tag simply means that a TSSA licensed gas technician has found your gas fired equipment to be either
+        not code compliant or unsafe to use.
       </div>
 
       {/* Container Box */}

@@ -97,8 +97,9 @@ function RooftopUnit() {
           </div>
         </div>
 
-        {/* Footer */}
+        <div className="bg-stone-200">
         <Footer/>
+        </div>
       </div>
     </>
   );

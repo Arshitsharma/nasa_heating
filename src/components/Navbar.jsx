@@ -9,6 +9,8 @@ export const Navbar = () => {
   const [selectedSub, setSelectedSub] = useState('');
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [dropdownParent, setDropdownParent] = useState('');
+  const [mobileDropdownParent, setMobileDropdownParent] = useState('');
+  const [closeTimeout, setCloseTimeout] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -19,20 +21,54 @@ export const Navbar = () => {
     setSelectedMain(parentItem);
     setIsOpen(false);
     setDropdownOpen(false);
+    setMobileDropdownParent('');
     navigate(subItemPath);
-    window.scrollTo(0, 0); // Scroll to top on navigation
+    window.scrollTo(0, 0);
+  };
+
+  const handleMouseEnter = (item) => {
+    if (closeTimeout) {
+      clearTimeout(closeTimeout);
+      setCloseTimeout(null);
+    }
+    
+    if (dropdownOptions[item].subItems.length > 0) {
+      setDropdownParent(item);
+      setDropdownOpen(true);
+    } else {
+      setDropdownOpen(false);
+      setDropdownParent('');
+    }
+  };
+
+  const handleDropdownMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setDropdownOpen(false);
+      setDropdownParent('');
+    }, 150); // 150ms delay before closing
+    
+    setCloseTimeout(timeout);
   };
 
   const handleMainItemClick = (item, itemPath) => {
-    if (dropdownOptions[item].subItems.length === 0) {
-      setSelectedMain(item);
-      setSelectedSub('');
-      setDropdownOpen(false);
-      navigate(itemPath);
-      window.scrollTo(0, 0); // Scroll to top on navigation
+    if (isOpen) {
+      if (dropdownOptions[item].subItems.length > 0) {
+        setMobileDropdownParent(mobileDropdownParent === item ? '' : item);
+      } else {
+        setSelectedMain(item);
+        setSelectedSub('');
+        setIsOpen(false);
+        navigate(itemPath);
+        window.scrollTo(0, 0);
+      }
     } else {
-      setDropdownParent(item);
-      setDropdownOpen(dropdownParent === item ? !dropdownOpen : true);
+      if (dropdownOptions[item].subItems.length === 0) {
+        setSelectedMain(item);
+        setSelectedSub('');
+        setDropdownOpen(false);
+        navigate(itemPath);
+        window.scrollTo(0, 0);
+      }
     }
   };
 
@@ -48,9 +84,14 @@ export const Navbar = () => {
       path: '/air-conditioning',
       subItems: [
         { label: 'CENTRAL AIR CONDITIONERS', path: '/air-conditioning/central-ac' },
-        { label: 'DUCTLESS SYSTEMS & HEAT PUMPS', path: '/air-conditioning/ductless-systems-&-heat-pumps' },
-        { label: 'HEAT PUMPS', path: '/air-conditioning/heat-pumps' },
+        { label: 'DUCTLESS SYSTEMS', path: '/air-conditioning/ductless-systems-&-heat-pumps' },
+        // { label: 'HEAT PUMPS', path: '/air-conditioning/heat-pumps' },
       ],
+    },
+    'HEAT PUMPS': { 
+      path: '/heat-pumps', 
+      subItems: [
+      ]
     },
     'WATER HEATERS': {
       path: '/water-heaters',
@@ -82,7 +123,8 @@ export const Navbar = () => {
     },
     'GAS PIPING': { 
       path: '/gas-piping', 
-      subItems: []
+      subItems: [
+      ]
     }
   };
 
@@ -112,6 +154,14 @@ export const Navbar = () => {
       setSelectedSub('');
     }
   }, [location.pathname]);
+
+  useEffect(() => {
+    return () => {
+      if (closeTimeout) {
+        clearTimeout(closeTimeout);
+      }
+    };
+  }, [closeTimeout]);
 
   return (
     <nav className="bg-gray-100 shadow-md w-full h-26">
@@ -162,7 +212,7 @@ export const Navbar = () => {
         <img 
           src={phoneLogo} 
           alt="Phone Contact" 
-          className="h-10 sm:h-14 w-auto hidden md:block" 
+          className="h-10 sm:h-14 w-auto hidden md:block pt-3" 
         />
 
         {/* Menu Button for Small Screens */}
@@ -189,43 +239,35 @@ export const Navbar = () => {
       </div>
       
     {/* <div className='flex items-center justify-between max-w-6xl mx-auto px-4 sm:px-6 lg:px-0 pb-2 gap-4 sm:gap-8 ml-2 sm:ml-8 md:ml-60'> */}
-    <div className="flex items-center justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-2">
-      <div className={`${isOpen ? 'block' : 'hidden'} md:flex md:justify-center md:space-x-16 mt-2 text-left`}>
+    <div className="flex items-center md:justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-2">
+      <div 
+        className={`${isOpen ? 'block w-full' : 'hidden'} md:flex md:justify-center md:space-x-9 mt-2 text-left`}
+      >
         {Object.keys(dropdownOptions).map((item) => (
-          <div key={item} className="relative">
-            {/* <span
-              className={`text-gray-700 font-semibold cursor-pointer hover:text-red-500 ${
-                selectedMain === item ? 'text-red-500 border-b-4 border-red-500 pb-[6px]' : ''
-              }`}
-              onClick={() => handleMainItemClick(item, dropdownOptions[item].path)}
-            >
-              {item.replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase())}
-            </span> */}
+          <div 
+            key={item} 
+            className="relative md:inline-block"
+            onMouseEnter={() => !isOpen && handleMouseEnter(item)}
+            onMouseLeave={() => !isOpen && handleDropdownMouseLeave()}
+          >
             <span
-              className={`text-gray-700 font-semibold cursor-pointer hover:text-red-500 ${
+              className={`block py-2 md:py-0 text-gray-700 text-base font-semibold cursor-pointer hover:text-red-500${
                 selectedMain === item && !isOpen ? 'text-red-500 border-b-4 border-red-500 pb-[6px]' : ''
               }`}
               onClick={() => handleMainItemClick(item, dropdownOptions[item].path)}
             >
               {item.replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase())}
             </span>
-            {dropdownParent === item && dropdownOpen && dropdownOptions[item].subItems.length > 0 && (
-              // <div className="absolute z-10 mt-2 bg-white shadow-lg rounded-md w-max">
-              <div className="absolute left-0 z-10 mt-2 bg-white shadow-lg rounded-md w-max">
+            {((dropdownParent === item && dropdownOpen && !isOpen) || (isOpen && mobileDropdownParent === item)) && 
+             dropdownOptions[item].subItems.length > 0 && (
+              <div 
+                className={`${isOpen ? 'relative' : 'absolute'} left-0 z-10 mt-2 bg-white shadow-lg rounded-md w-max`}
+              >
                 {dropdownOptions[item].subItems.map((subItem) => (
-                  // <span
-                  //   key={subItem.path}
-                  //   className={`block px-4 py-2 text-gray-700 hover:bg-red-100 cursor-pointer ${
-                  //     selectedSub === subItem.path ? 'bg-red-100' : ''
-                  //   }`}
-                  //   onClick={() => handleSubItemClick(subItem.path, item)}
-                  // >
-                  //   {subItem.label}
-                  // </span>
                   <span
                     key={subItem.path}
                     className={`block px-4 py-2 text-gray-700 hover:bg-gray-200 cursor-pointer ${
-                      selectedSub === subItem.path ? 'bg-gray-200' : ''
+                      selectedSub === subItem.path ? 'bg-red-200 font-semibold text-red-500' : ''
                     }`}
                     onClick={() => handleSubItemClick(subItem.path, item)}
                   >

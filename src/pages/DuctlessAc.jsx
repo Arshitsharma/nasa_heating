@@ -63,7 +63,7 @@ function DuctlessAc() {
         <div className="flex-grow pt-16 md:pt-24 mt-6">
           <SectionWithOverlay
             imageUrl={DuctlessAcBanner}
-            highlightText="DUCTLESS SYSTEMS & HEAT PUMPS"
+            highlightText="DUCTLESS SYSTEMS"
             heading="CHOOSING THE RIGHT SYSTEM TODAY CAN SAVE YOU UNTIMELY REPLACEMENT COSTS"
             description="We can help you make the right choices"
             buttonText="Call: 416-879-7198"

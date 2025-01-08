@@ -82,7 +82,7 @@ function Heating() {
             highlightText="Gas Furnace"
             heading="HEATING OF YOUR HOME MAKES UP FOR 40-60% OF YOUR ENERGY BILLS"
             description="We can help you lower your running costs."
-            buttonText="+91 9876975789"
+            buttonText="Call: 416-879-7198'"
             buttonLink="#"
           />
 
@@ -109,31 +109,28 @@ function Heating() {
             </div>
           </div> */}
 
-<div className="bg-stone-200 py-8">
-  <div className="overflow-x-auto">
-    <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-full mx-4 sm:mx-8 lg:mx-60 py-4">
-      {servicesData.map((service, index) => (
-        <div
-          key={index}
-          className="flex-shrink-0 w-[280px] sm:w-full" // Fixed width on mobile, full width on larger screens
-        >
-          <ServiceCard 
-            icon={service.icon} 
-            title={service.title} 
-            description={service.description} 
-          />
+          <div className="bg-stone-200 py-8">
+            <div className="overflow-x-auto">
+              <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-full mx-4 sm:mx-8 lg:mx-60 py-4">
+                {servicesData.map((service, index) => (
+                  <div
+                    key={index}
+                    className="flex-shrink-0 w-[280px] sm:w-full" // Fixed width on mobile, full width on larger screens
+                  >
+                    <ServiceCard 
+                      icon={service.icon} 
+                      title={service.title} 
+                      description={service.description} 
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          </div>
+          <div className="bg-stone-200">
+          <Footer/>
         </div>
-      ))}
-    </div>
-  </div>
-</div>
-
-
-
-        </div>
-
-        {/* Footer */}
-        <Footer />
       </div>
     </>
   );

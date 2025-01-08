@@ -32,7 +32,7 @@ export const ServiceArea = () => {
           <img 
             src={serviceAreaMap} 
             alt="GTA Service Area Map" 
-            className="max-w-full h-auto w-[280px] sm:w-[400px] transition-transform duration-300 hover:scale-110"
+            className="max-w-full h-auto w-[320px] sm:w-[440px] map transition-transform duration-300 transform scale-105 hover:scale-110"
           />
         </div>
       </div>
