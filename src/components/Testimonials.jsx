@@ -87,7 +87,7 @@ export const Testimonials = () => {
          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
            <Slider {...settings}>
              {testimonials.map((testimonial, index) => (
-              <div key={index} className="p-4 mx-4">
+              <div key={index} className="p-4">
                 <div className="bg-white rounded-lg text-left p-6">
                   <div className="flex text-yellow-400 text-2xl mb-4">
                     ★★★★★
