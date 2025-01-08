@@ -19,7 +19,7 @@ function HeatPumps() {
     {
       title: "Energy saving heating",
       paragraphs: [
-        "At the most basic level, a heat pump is an appliance that can efciently & economically heat and cool your home. In the heating mode it uses much less energy than a gas furnace, boiler, or electric radiator. For heating, it absorbs ambient heat from the outside air and transfers it inside (or out in cooling mode), as opposed to generating heat by burning fossil fuel or using energy-intensive electrical resistance heating elements."
+        "At the most basic level, a heat pump is an appliance that can efficiently & economically heat and cool your home. In the heating mode it uses much less energy than a gas furnace, boiler, or electric radiator. For heating, it absorbs ambient heat from the outside air and transfers it inside (or out in cooling mode), as opposed to generating heat by burning fossil fuel or using energy-intensive electrical resistance heating elements."
     ]
     },
     {
