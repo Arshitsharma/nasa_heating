@@ -72,7 +72,7 @@ function Humidifier() {
               sections={sections} 
             imageUrl={imageUrl} 
             bottomText="We install, service & repair all brands of humidifiers (Flow thru and Steam type), including -
-                        Aprilaire, General Aire etc." 
+                        Aprilaire, General Aire among many others." 
           />
  
           {/* Service Cards Section */}

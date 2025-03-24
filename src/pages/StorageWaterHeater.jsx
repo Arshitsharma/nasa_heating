@@ -87,7 +87,7 @@ function StorageWaterHeater() {
             sections={sections} 
             imageUrl={imageUrl} 
             bottomText="We install, service & repair all brands of Residential & Commercial Water Heaters including -
-                        Bradford White, John Wood, GSW, A.O. Smith, GE etc." 
+                        Bradford White, John Wood, GSW, A.O. Smith, GE among many others." 
           />
 
           {/* Service Cards Section */}

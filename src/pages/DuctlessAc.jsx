@@ -73,7 +73,7 @@ function DuctlessAc() {
           sections={sections} 
           imageUrl={imageUrls} 
           bottomText="We install, service and repiar all brands of ductless units, 
-                      including - Mitsubishi, MITS AIR etc." 
+                      including - Mitsubishi, MITS AIR among many others." 
           />
 
           {/* Service Cards Section */}

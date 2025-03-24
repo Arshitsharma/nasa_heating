@@ -63,7 +63,7 @@ function VentilationUnits() {
           <FurnaceInfoSection 
             sections={sections} 
             imageUrl={imageUrl} 
-            bottomText="We install, service & repair all brands of Ventilation Units including - Honeywell, Aprilaire, VanEE HRV Systems etc."
+            bottomText="We install, service & repair all brands of Ventilation Units including - Honeywell, Aprilaire, VanEE HRV Systems among many others."
             />
 
           {/* Service Cards Section */}

@@ -18,13 +18,19 @@ function Thermostat() {
     {
       title: "Programmable Smart Wi-Fi Thermostats",
       paragraphs: [
+        "Ontario Regulations require a HVAC licensed & trained technician must install the thermostats since they control the gas furnace.",
         "These thermostats allow you to monitor and adjust your home's temperature from anywhere in the world, using your mobile devices.",
         "The smart thermostats learn your heating and cooling cycle times to deliver the right temperature when you want it. This permits energy savings without compromising comfort.",
-        "Advanced Fan Control - Allows timed air circulation and helps minimize temperature differences in areas within your home.",
-        "Auto Alerts - Extreme temperature alerts, problem with the heating or cooling system and filter change reminders sent to your mobile devices so that you are able to take timely & corrective action.",
-        "Locking Touchscreen - Advanced password protected locking features provide security and prevent unauthorized access to the thermostat.",
+        // "Advanced Fan Control - Allows timed air circulation and helps minimize temperature differences in areas within your home.",
+        // "Auto Alerts - Extreme temperature alerts, problem with the heating or cooling system and filter change reminders sent to your mobile devices so that you are able to take timely & corrective action.",
+        // "Locking Touchscreen - Advanced password protected locking features provide security and prevent unauthorized access to the thermostat.",
         "It is recommended that these thermostats are installed by licensed and trained technicians, as they control your gas furnace."
-    ]   
+    ],
+    bulletPoints: [
+      "Advanced Fan Control - Allows timed air circulation and helps minimize temperature differences in areas within your home.",
+      "Auto Alerts - Extreme temperature alerts, problem with the heating or cooling system, and filter change reminders sent to your mobile devices so that you are able to take timely & corrective action.",
+      "Locking Touchscreen - Advanced password-protected locking features provide security and prevent unauthorized access to the thermostat.",
+    ],
     },
   ];
 
@@ -59,7 +65,7 @@ function Thermostat() {
           <FurnaceInfoSection 
             sections={sections} 
             imageUrl={imageUrl} 
-            bottomText="We install, service & repair all brands of thermostats, including - Ecobee, Nest, Honeywell, White Rodgers, Sensi etc."
+            bottomText="We install, service & repair all brands of thermostats, including - Ecobee, Nest, Honeywell, White Rodgers, Sensi among many others."
             />
 
           {/* Service Cards Section */}

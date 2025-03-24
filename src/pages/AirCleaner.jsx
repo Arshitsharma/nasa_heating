@@ -19,7 +19,7 @@ function AirCleaner() {
     {
       title: "Strange but true!",
       paragraphs: [
-       "The EPA has named indoor air pollution as one of the top five environmental risks to public health.",
+       "Studies have proven that indoor air pollution as one of the top five environmental risks to public health.",
        "Modern weather-tight homes trap airborne particles inside, so everyday contaminants accumulate and their concentration keeps increasing. Just one cubic foot of air can have more than 30 million pollutants, i.e. 100 times more than the air outside. With the amount of time spent indoors, it's no wonder so many people suffer from allergies, asthma and other respiratory illnesses.",
        "Pollen, cat dander, tobacco smoke particles, mold spores, VOCs and household dust all contribute to poor indoor air quality."
         ]
@@ -27,8 +27,8 @@ function AirCleaner() {
     {
       title: "Can you control Indoor Air Quality?",
       paragraphs: [
-        "Yes, we can help you control the quality of the air with a whole-home air purifier. Unlike standard portable air purifiers, these are installed as part of your home's central heating and cooling system and work efficiently to remove pollutants from throughout your entire home.",
-        "It will also keep your air conditioner's cooling coil clean and your furnace working more efficiently, saving energy, minimizing repair costs and extending service life."
+        "Absolutely, we can help you control the quality of the air with a whole-home air purifier. Unlike standard portable air purifiers, these are integrated as an essential part of your home's central heating and cooling system and work efficiently to remove pollutants from throughout your entire home.",
+        "Proper Air-Filtration will keep your cooling coil clean and your furnace working more efficiently, saving energy, minimizing repair costs and extending service life."
         ]
     },
   ];
@@ -71,7 +71,7 @@ function AirCleaner() {
           <FurnaceInfoSection 
             sections={sections} 
             imageUrl={imageUrl} 
-            bottomText="We install, service & repair all brands of Air Cleaners including - Aprilaire, Trane, Carrier, Electroaire etc."
+            bottomText="We install, service & repair all brands of Air Cleaners including - Aprilaire, Trane, Carrier, Electroaire among many others."
             />
 
           {/* Service Cards Section */}

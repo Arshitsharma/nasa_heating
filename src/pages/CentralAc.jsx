@@ -79,7 +79,7 @@ function CentralAc() {
             sections={sections} 
             imageUrl={imageUrl} 
             bottomText="We install, service & repair all brands of Air conditioners, including - Amana, Carrier, Lennox,
-                        York, Trane, American Standard, Keeprite and Comfortmaker etc." 
+                        York, Trane, American Standard, Keeprite and Comfortmaker among many others." 
           />
 
           {/* Service Cards Section */}

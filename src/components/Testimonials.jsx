@@ -52,7 +52,7 @@ export const Testimonials = () => {
     <div className="testimonials-section">
       <div className="py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-center text-4xl font-bold mb-12">Customer Testimonials</h1>
+          <h1 className="text-center text-4xl font-bold mb-12">Our Customer Reviews and Ratings</h1>
           {/* <h2 className="text-center text-3xl font-bold mb-4">Customer Testimonials</h2>
           <p className="text-center mb-8">Find out what our customers have to say about us.</p> */}
           
@@ -92,7 +92,7 @@ export const Testimonials = () => {
         </div>
       </div>
 
-      <div className="pb-8">
+      {/* <div className="pb-8">
          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
            <Slider {...settings}>
              {testimonials.map((testimonial, index) => (
@@ -110,7 +110,8 @@ export const Testimonials = () => {
             ))}
           </Slider>
         </div>
-      </div>
+      </div> */}
+      
     </div>
   );
 };

@@ -43,7 +43,7 @@ export const Section2 = React.memo(() => {
       <div className="flex flex-col items-center text-3xl md:text-4xl font-bold mt-6 px-4 sm:px-6 lg:px-0 max-w-6xl mx-auto">
         <h1>How can we help you?</h1>
         <h3 className="text-base md:text-xl font-normal mx-auto mt-3 text-center px-4 sm:px-6 lg:px-8">
-          Prompt, reliable and helpful. Our engineers always have a solution for any problem that you may have with your
+          Prompt, reliable and helpful. Our service engineers always have a solution for any problem that you may have with your
           heating, air conditioning, hot water system, or its components.
         </h3>
       </div>
@@ -54,7 +54,7 @@ export const Section2 = React.memo(() => {
           {services.map((service, index) => (
             <button
               key={index}
-              className="bg-red-600 text-white py-2 md:py-3 px-4 md:px-6 font-semibold text-sm md:text-lg hover:bg-red-700 transition duration-300 cursor-default"
+              className="bg-red-600 text-white py-2 md:py-3 px-4 md:px-6 font-semibold text-sm md:text-lg cursor-default"
               aria-label={`Learn more about ${service.title}`}
             >
               {service.title}

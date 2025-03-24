@@ -17,7 +17,7 @@ import FurnaceImg from '../assets/products/furnaces.jpg'; // Replace with your a
 function Heating() {
   const sections = [
     {
-      title: "How can you control operating costs?",
+      title: "Lower your heating costs with a High Efficiency, Multi Stage Furnace.",
       paragraphs: [
         "Heating with Natural Gas is significantly less expensive than oil, propane & electricity.",
         "Your investment in a High-Efficiency natural gas furnace is recovered through lower operating costs over the furnace's 15 to 20 year life span.",
@@ -80,7 +80,7 @@ function Heating() {
           <SectionWithOverlay
             imageUrl={BannerImg}
             highlightText="Gas Furnace"
-            heading="HEATING OF YOUR HOME MAKES UP FOR 40-60% OF YOUR ENERGY BILLS"
+            heading="Save Money Control your operating costs."
             description="We can help you lower your running costs."
             buttonText="Call: 416-879-7198'"
             buttonLink="#"
@@ -91,7 +91,7 @@ function Heating() {
             imageUrl={imageUrl}
             bottomText="We install, service and repair all brands of Gas furnaces, 
                         including- Keeprite, Arcoaire,Lennox, Carrier, York, Trane, 
-                        Amana and Goodman etc." 
+                        Amana and among many others." 
           />
 
           {/* Service Cards Section */}

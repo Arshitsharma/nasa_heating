@@ -27,7 +27,12 @@ function GasPiping() {
         ]
     },
     {
-      title: "Assurance of a job done right, always!",
+      // title: "Assurance of a job done right, always!",
+      title: (
+        <>
+          Assurance of a job done right, <strong><u>always!</u></strong>
+        </>
+      ),
       paragraphs: [
         "Ensuring safe gas supply requires expertise. We employ certified & experienced gas ﬁtters for all types of natural gas line work with pressure testing and tagging.",
         "We assess your requirement and your application and accordingly suggest the appropriate piping for your needs.",
@@ -74,7 +79,7 @@ function GasPiping() {
           <SectionWithOverlay
             imageUrl={GasPipingBannerImg}
             highlightText="GAS PIPING"
-            heading="PRESSURE TESTED &TAGGED GAS PIPING FOR INCIDENT FREE COMFORT"
+            heading="PRESSURE TESTED & TAGGED GAS PIPING FOR INCIDENT FREE COMFORT"
             description="Get in touch now for an estimate"
             buttonText="Call: 416-879-7198"
             buttonLink="#"

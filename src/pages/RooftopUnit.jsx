@@ -29,7 +29,7 @@ function RooftopUnit() {
     {
      title: "Fast Emergency Heating Service",
      paragraphs: [
-          "Call us for the fastest emergency Heating & Cooling repair service in the GTA and the surrounding areas. Our technicians are on call 24/7, ready to address your emergency.",
+          "Call us for the quick emergency Heating & Cooling repair service in the GTA and the surrounding areas. Our technicians are on call 24/7, ready to address your emergency.",
         ]
        },
   ];
@@ -63,7 +63,7 @@ function RooftopUnit() {
           <SectionWithOverlay
             imageUrl={RooftopUnitBanner}
             highlightText="ROOFTOP UNITS & UNIT HEATERS"
-            heading="WORRY FREE REPAIR & MAINTENANCE SERVICES"
+            heading="Fast Trouble-Shooting & Accurate Repairs"
             description="Get in touch today"
             buttonText="Call: 416-879-7198"
             buttonLink="#"
@@ -72,7 +72,7 @@ function RooftopUnit() {
             sections={sections} 
             imageUrl={imageUrl} 
             topText="We provide professional service, trouble-shooting and repair of Rooftop HVAC Units & Unit Heaters across the GTA."
-            bottomText="We install, service & repair all brands of Rooftop Units including - Lennox, Carrier, York, Trane, Keeprite etc."
+            bottomText="We install, service & repair all brands of Rooftop Units including - Lennox, Carrier, York, Trane, Keeprite among many others."
           />
 
           {/* Service Cards Section */}

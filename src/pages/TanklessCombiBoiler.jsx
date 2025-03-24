@@ -102,8 +102,8 @@ function TanklessCombiBoiler() {
                       licensed to maintain & repair the boiler."
             bottomText="We install, service & repair all brands of residential or commercial 
                         Combi Boilers, including -Navien, Noritz, Bradford White, Rinnai, 
-                        Viessmann, Bosch etc."  
-          />
+                        Viessmann, Bosch among many others."  
+                      />
 
           {/* Service Cards Section */}
           <div className='bg-stone-200 py-8'>

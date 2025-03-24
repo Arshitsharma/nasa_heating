@@ -19,9 +19,9 @@ function HeatPumps() {
     {
       title: "Energy saving heating",
       paragraphs: [
-        "At the most basic level, a heat pump is an appliance that can efficiently & economically heat and cool your home. In the heating mode it uses much less energy than a gas furnace, boiler, or electric radiator. For heating, it absorbs ambient heat from the outside air and transfers it inside (or out in cooling mode), as opposed to generating heat by burning fossil fuel or using energy-intensive electrical resistance heating elements."
+        "A Heat Pump can efficiently & economically heat and cool your home. In the heating mode it uses much less energy than a gas furnace, boiler, or electric Heaters. it absorbs heat from the outdoor air and transfers it inside (or out in cooling mode), as opposed to generating heat by burning fossil fuel or using energy-intensive electrical resistance heating elements."
     ]
-    },
+    },          
     {
         title: "Heat Pumps are eco-friendly",
         paragraphs: [
@@ -88,7 +88,7 @@ function HeatPumps() {
           sections={sections} 
           imageUrl={imageUrls} 
           bottomText="We install, service and repiar all brands of ductless units, 
-                      including - Mitsubishi, MITS AIR etc." 
+                      including - Mitsubishi, MITS AIR among many others." 
           />
 
           {/* Service Cards Section */}

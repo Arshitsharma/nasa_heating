@@ -27,7 +27,7 @@ export const SectionCarousel = () => {
   const slides = [
     {
       imageUrl: familyHealthComfort,
-      heading: "YOU WON'T COMPROMISE ON HEALTH AND COMFORT OF YOUR FAMILY!",
+      heading: "Family Health & Comfort Always comes First.",
       description: 'Making the right HVAC choices can ensure that you don’t.',
       buttonText: 'Call: 416-879-7198',
       buttonLink: '#',
@@ -64,7 +64,7 @@ export const SectionCarousel = () => {
         ))}
       </Slider>
 
-      <style jsx global>{`
+      <style>{`
         .slick-prev, .slick-next {
           z-index: 1;
           width: 40px;

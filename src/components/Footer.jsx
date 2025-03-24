@@ -11,37 +11,38 @@ import emailjs from '@emailjs/browser';
 import nasaLogo from '../assets/icons/nasa-logo.svg';
 
 const Footer = () => {
-  const [showModal, setShowModal] = useState(false);
+  // const [showModal, setShowModal] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const formData = new FormData(e.target);
     
-    const templateParams = {
-      fullName: formData.get('fullName'),
-      email: formData.get('email'),
-      dayPhone: formData.get('dayPhone'),
-      nightPhone: formData.get('nightPhone'),
-      bookingType: formData.get('bookingType'),
-      hearAboutUs: formData.get('hearAboutUs'),
-      comments: formData.get('comments')
-    };
+  //   const templateParams = {
+  //     fullName: formData.get('fullName'),
+  //     email: formData.get('email'),
+  //     dayPhone: formData.get('dayPhone'),
+  //     nightPhone: formData.get('nightPhone'),
+  //     bookingType: formData.get('bookingType'),
+  //     hearAboutUs: formData.get('hearAboutUs'),
+  //     comments: formData.get('comments')
+  //   };
 
-    emailjs.send(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      templateParams,
-      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-    )
-    .then(() => {
-      alert('Thank you for your message. We will contact you soon!');
-      setShowModal(false);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-      alert('Failed to send message. Please try again or contact us directly.');
-    });
-  };
+  //   emailjs.send(
+  //     import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  //     import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+  //     templateParams,
+  //     import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+  //   )
+  //   .then(() => {
+  //     alert('Thank you for your message. We will contact you soon!');
+  //     setShowModal(false);
+  //   })
+  //   .catch((error) => {
+  //     console.error('Error:', error);
+  //     alert('Failed to send message. Please try again or contact us directly.');
+  //   });
+  // };
+
 
   return (
     <div>
@@ -52,7 +53,7 @@ const Footer = () => {
           {/* new icon will be loaded after icon is made  */}
           <div className="hover:scale-110 transition-all duration-200 cursor-pointer">
               <img 
-                onClick={() => setShowModal(true)}
+                onClick={() => window.open('https://wa.me/14168797198', '_blank')}
                 src={contactIcon} 
                 alt="Contact Us" 
               />
@@ -101,7 +102,7 @@ const Footer = () => {
       </div>
 
       {/* Modal Form */}
-      {showModal && (
+      {/* {showModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4 overflow-y-auto">
           <div className="bg-white p-6 rounded-lg w-full max-w-md relative my-8">
             <div className="flex justify-between items-center mb-4">
@@ -175,7 +176,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
