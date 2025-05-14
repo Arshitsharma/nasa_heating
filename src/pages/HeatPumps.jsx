@@ -19,7 +19,7 @@ function HeatPumps() {
     {
       title: "Energy saving heating",
       paragraphs: [
-        "A Heat Pump can efficiently & economically heat and cool your home. In the heating mode it uses much less energy than a gas furnace, boiler, or electric Heaters. it absorbs heat from the outdoor air and transfers it inside (or out in cooling mode), as opposed to generating heat by burning fossil fuel or using energy-intensive electrical resistance heating elements."
+        "A Heat Pump can efficiently & economically heat and cool your home. In the heating mode it uses much less energy than a gas furnace, boiler, or heater. It absorbs heat from the outdoor air and transfers it inside (or out in cooling mode), as opposed to generating heat by burning fossil fuel or using energy-intensive electrical resistance heating elements."
     ]
     },          
     {
@@ -37,8 +37,8 @@ function HeatPumps() {
     {
         title: "Types of air-to-air heat pumps",
         paragraphs: [
-          "Central Units - These units supply heating and cooling through the existing supply & return air ductwork in the house.",
-          "Ductless Units - Single Zone and Multi Zone Units - Work with one or more indoor heads located within the home.",
+          <> <strong>Central Units </strong> - These units supply heating and cooling through the existing supply & return air ductwork in the house. </> ,
+          <> <strong>Ductless Units</strong> - Single Zone and Multi Zone Units - Work with one or more indoor heads located within the home."</> ,
     ]
     },
   ];
@@ -87,7 +87,7 @@ function HeatPumps() {
           <FurnaceInfoSection 
           sections={sections} 
           imageUrl={imageUrls} 
-          bottomText="We install, service and repiar all brands of ductless units, 
+          bottomText="We install, service and repair all brands of ductless units, 
                       including - Mitsubishi, MITS AIR among many others." 
           />
 

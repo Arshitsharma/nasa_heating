@@ -18,8 +18,8 @@ function CentralAc() {
     {
       title: "Beyond comfort to efficiency and health",
       paragraphs: [
-        "A temperature controlled environment is essential for comfort and working efficiency. But nowadays,this extends further to Humidity Control, Optimal Air-Movement, Ventilation and Indoor Air Quality.",
-        "This makes it a job for professionals. That is how you too can benefit from our years of experience,technical expertise and trained technicians.",
+        "A temperature controlled environment is essential for comfort and working efficiency. But nowadays, this extends further to Humidity Control, Optimal Air-Movement, Ventilation and Indoor Air Quality.",
+        "This makes it a job for professionals. That is how you too can benefit from our years of experience, technical expertise and trained technicians.",
         ]
     },
     {

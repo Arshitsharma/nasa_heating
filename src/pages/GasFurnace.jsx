@@ -28,7 +28,7 @@ function Heating() {
       title: "Which furnace is right for you?",
       paragraphs: [
         "Gas furnace is a long term investment so choosing the right furnace is important.",
-        "Operating costs, efficiency and 'correct sizing' are some critical considerations that can help you avoid problems like short cycling, noisy operation, uneven temperatures and high gas bills.",
+        <>Operating costs, efficiency and <strong>'correct sizing'</strong> are some critical considerations that can help you avoid problems like short cycling, noisy operation, uneven temperatures and high gas bills.</>,
         "We can help you identify the right furnace - Single Stage, Two Stage & Modulating (Multiple Stage Operation), with appropriate sizing for your home and then you can choose the product that best fits your budget."
       ]
     },
@@ -80,9 +80,9 @@ function Heating() {
           <SectionWithOverlay
             imageUrl={BannerImg}
             highlightText="Gas Furnace"
-            heading="Save Money Control your operating costs."
-            description="We can help you lower your running costs."
-            buttonText="Call: 416-879-7198'"
+            heading="Save Money & Control your operating costs."
+            description="We can help you lower your heating costs."
+            buttonText="Call: 416-879-7198"
             buttonLink="#"
           />
 
@@ -90,7 +90,7 @@ function Heating() {
             sections={sections} 
             imageUrl={imageUrl}
             bottomText="We install, service and repair all brands of Gas furnaces, 
-                        including- Keeprite, Arcoaire,Lennox, Carrier, York, Trane, 
+                        including- Keeprite, Arcoaire, Lennox, Carrier, York, Trane, 
                         Amana and among many others." 
           />
 

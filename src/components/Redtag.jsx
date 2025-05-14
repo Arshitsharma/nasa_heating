@@ -11,7 +11,7 @@ export const Redtag = () => {
       {/* Paragraph */}
       <div className="text-center max-w-screen-lg mx-auto mt-4 sm:mt-6 text-base sm:text-lg md:text-xl">
         Have you received a Warning Tag or Red Tag (A or B) from your HVAC contractor or from Enbridge Gas and need help getting
-        it resolved? Our certified and licensed engineers can do it for you.
+        it resolved? Our licensed and experienced service technicians can correct the problems for you.
       </div>
 
       <div className="text-center max-w-screen-lg mx-auto mt-4 sm:mt-6 text-base sm:text-lg md:text-xl">

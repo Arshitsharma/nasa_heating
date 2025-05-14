@@ -63,8 +63,8 @@ function Humidifier() {
           <SectionWithOverlay
             imageUrl={HumidifierBanner}
             highlightText="HUMIDIFIERS"
-            heading="HUMIDIFICATION IS ONE OF THE CRITICAL ASPECTS OF TOTAL INDOOR COMFORT"
-            description="Find out how you can get things right"
+            heading="HUMIDIFICATION IS A CRITICAL ASPECT OF TOTAL INDOOR COMFORT"
+            description="Find out how you can control it & get it right"
             buttonText="Call: 416-879-7198"
             buttonLink="#"
           />

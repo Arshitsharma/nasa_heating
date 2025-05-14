@@ -27,8 +27,8 @@ export const SectionCarousel = () => {
   const slides = [
     {
       imageUrl: familyHealthComfort,
-      heading: "Family Health & Comfort Always comes First.",
-      description: 'Making the right HVAC choices can ensure that you don’t.',
+      heading: "Family Health, Safety & Comfort Always Comes First.",
+      description: 'Making the right HVAC choices will ensure this.',
       buttonText: 'Call: 416-879-7198',
       buttonLink: '#',
     },
