@@ -27,9 +27,9 @@ function Thermostat() {
         // "It is recommended that these thermostats are installed by licensed and trained technicians, as they control your gas furnace."
     ],
     bulletPoints: [
-      "Advanced Fan Control - Allows timed air circulation and helps minimize temperature differences in areas within your home.",
-      "Auto Alerts - Extreme temperature alerts, problem with the heating or cooling system, and filter change reminders sent to your mobile devices so that you are able to take timely & corrective action.",
-      "Locking Touchscreen - Advanced password-protected locking features provide security and prevent unauthorized access to the thermostat.",
+      <> <strong>Advanced Fan Control</strong> - Allows timed air circulation and helps minimize temperature differences in areas within your home.</>,
+      <> <strong>Auto Alerts</strong> - Extreme temperature alerts, problem with the heating or cooling system, and filter change reminders sent to your mobile devices so that you are able to take timely & corrective action.</>,
+      <> <strong>Locking Touchscreen</strong> - Advanced password-protected locking features provide security and prevent unauthorized access to the thermostat.</>,
     ],
     },
   ];

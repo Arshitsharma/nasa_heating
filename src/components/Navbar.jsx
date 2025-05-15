@@ -211,8 +211,9 @@ export const Navbar = () => {
         {/* Phone Logo Section */}
         <img 
           src={phoneLogo} 
+          onClick={() => window.location.href = 'tel:416-879-7198'}
           alt="Phone Contact" 
-          className="h-10 sm:h-14 w-auto hidden md:block pt-3" 
+          className="h-10 sm:h-14 w-auto hidden md:block pt-3 cursor-pointer" 
         />
 
         {/* Menu Button for Small Screens */}
