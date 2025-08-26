@@ -44,7 +44,7 @@ export const Section2 = React.memo(() => {
         <h1>How can we help you?</h1>
         <h3 className="text-base md:text-xl font-normal mx-auto mt-3 text-center px-4 sm:px-6 lg:px-8">
           Prompt, reliable and helpful. Our service engineers always have a solution for any problem that you may have with your
-          heating, air conditioning, hot water system, or its components.
+          heating, air-conditioning, hot water system, or its components.
         </h3>
       </div>
 
@@ -91,7 +91,8 @@ export const Section2 = React.memo(() => {
             {serviceCards.map((card, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 sm:flex-shrink md:flex-shrink-0 flex flex-col items-center border p-4 md:p-6 text-center shadow-lg shadow-neutral-400 transition-colors duration-300 hover:bg-red-100 w-64 sm:w-auto select-none"
+                // className="flex-shrink-0 sm:flex-shrink md:flex-shrink-0 flex flex-col items-center border p-4 md:p-6 text-center shadow-lg shadow-neutral-400 transition-colors duration-300 hover:bg-red-100 w-64 sm:w-auto select-none"
+                className="flex-shrink-0 sm:flex-shrink md:flex-shrink-0 flex flex-col items-center border p-4 md:p-6 text-center shadow-lg shadow-neutral-400 transition-colors duration-300"
                 aria-label={`Details about ${card.title}`}
               >
                 <img src={card.icon} alt={`${card.title} icon`} className="w-12 h-12 md:w-16 md:h-16 mb-4" />

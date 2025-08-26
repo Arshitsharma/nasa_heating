@@ -41,7 +41,7 @@ function TanklessCombiBoiler() {
     {
         title: "Regular maintenance of your boiler is important",
         paragraphs: [
-          "Timely and regular maintenance reduces boiler operating and energy costs, improves safety,ensures reliability, extends life of the boiler, indentify and eliminate potential problems in time.",
+          "Timely and regular maintenance reduces boiler operating and energy costs, improves safety, ensures reliability, extends life of the boiler, indentify and eliminate potential problems in time.",
          ]
       },
   ];

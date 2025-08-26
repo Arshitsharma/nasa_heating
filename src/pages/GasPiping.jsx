@@ -20,7 +20,7 @@ import FurnaceImg from '../assets/products/gas-piping.jpg';
 function GasPiping() {
   const sections = [
     {
-      title: "The most efficient way to fuel your heating",
+      title: "The most efficient way to fuel your heating, cooling & BBQ needs",
       paragraphs: [
         "Come April and Ontarians get ready for sunny weather with outdoor BBQs and pool openings. By October all homeowners start firing up their home heating systems.",
         "Natural gas is the least expensive and most efficient way to fuel a BBQ, Pool Heater, Gas Furnace, Boiler, Gas Stove, Water Heater, Fireplace etc, to name a few.",

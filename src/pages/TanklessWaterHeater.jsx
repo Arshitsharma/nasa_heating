@@ -31,7 +31,7 @@ function TanklessWaterHeater() {
       paragraphs: [
         "Software & sensors to detect water leaks and automatically turn off the flow of cold water, preventing damage to the water heater - or worse, to your home or business.",
         "Some Tankless brands also offer Stainless Steel Heat Exchangers that outlast Copper Heat Exchangers being less prone to corrosion, mineral deposits and leaks.",
-        "In-Take Air Filters minimize dirt and debris from collecting inside the cabinet & the heat exchanger,reducing service calls.",
+        "In-Take Air Filters minimize dirt and debris from collecting inside the cabinet & the heat exchanger, reducing service calls.",
         "Tankless water heaters, with routine maintenance, should last 2 to 3 times longer than a tank-type water heater."
         ]
     },
@@ -75,7 +75,7 @@ function TanklessWaterHeater() {
         <div className="flex-grow pt-16 md:pt-24 mt-6">
           <SectionWithOverlay
             imageUrl={TanklessWaterBanner}
-            highlightText="TANK LESS WATER HEATERS"
+            highlightText="TANKLESS WATER HEATERS"
             heading="UP TO 98% EFFICIENCY WITH ON-DEMAND WATER HEATING"
             description="Find out what this means to you in savings"
             buttonText="Call: 416-879-7198"

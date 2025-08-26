@@ -2,7 +2,8 @@ import React from 'react';
 
 const ServiceCard = ({ icon, title, description }) => {
   return (
-    <div className="flex flex-col items-center bg-white shadow-lg p-4 sm:p-6 md:p-8 lg:p-2 my-2 text-center h-[180px] sm:h-[220px] hover:bg-red-50 transition-colors duration-300">
+    // <div className="flex flex-col items-center bg-white shadow-lg p-4 sm:p-6 md:p-8 lg:p-2 my-2 text-center h-[180px] sm:h-[220px] hover:bg-red-50 transition-colors duration-300">
+    <div className="flex flex-col items-center bg-white shadow-lg p-4 sm:p-6 md:p-8 lg:p-2 my-2 text-center h-[180px] sm:h-[220px]">
       <div className="flex items-center justify-center">
         <img 
           src={icon} 

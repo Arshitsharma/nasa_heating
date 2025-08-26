@@ -17,7 +17,7 @@ import FurnaceImg from '../assets/products/furnaces.jpg'; // Replace with your a
 function Heating() {
   const sections = [
     {
-      title: "Lower your heating costs with a High Efficiency, Multi Stage Furnace.",
+      title: "Lower your heating costs with a High Efficiency, Multi Stage Gas Furnace.",
       paragraphs: [
         "Heating with Natural Gas is significantly less expensive than oil, propane & electricity.",
         "Your investment in a High-Efficiency natural gas furnace is recovered through lower operating costs over the furnace's 15 to 20 year life span.",
