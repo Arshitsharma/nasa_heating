@@ -23,7 +23,7 @@ function RooftopUnit() {
     {
      title: "Yearly Preventive Maintenance Plans",
      paragraphs: [
-          "Plans include comprehensive maintenance visits, including Spring Start Up, and Fall Change Over, visits. Filter replacement costs are covered in these plans. Get in touch for more details.",
+          "Plans include comprehensive maintenance visits, including Spring Start Up, and Fall Change-Over visits. Filter replacement costs are covered in these plans. Get in touch for more details.",
         ]
     },
     {
