@@ -37,7 +37,7 @@ function HeatPumps() {
     {
         title: "Types of air-to-air heat pumps",
         paragraphs: [
-          <> <strong>Central Units </strong> - These units supply heating and cooling through the existing supply & return air ductwork in the house. </> ,
+          <> <strong>Central Units </strong> - These units provide heating and cooling through the existing supply & return air ductwork in the house. </> ,
           <> <strong>Ductless Units</strong> - Single Zone and Multi Zone Units - Work with one or more indoor heads located within the home.</> ,
     ]
     },
