@@ -21,20 +21,20 @@ function App() {
   // Memoize route components to avoid unnecessary re-renders
   const routes = useMemo(
     () => [
-      { path: '/nasa_heating/', element: <HomePage /> },
+      { path: '/', element: <HomePage /> },
       { path: '/heating/gas-furnaces', element: <GasFurnace /> },
       { path: '/heating/tankless-combi-boilers', element: <TanklessCombiBoiler /> },
-      { path: '/air-conditioning/central-ac', element: <CentralAc /> },
-      { path: '/air-conditioning/ductless-systems-&-heat-pumps', element: <DuctlessAc /> },
+      { path: '/air-conditioning/central-air-conditioner', element: <CentralAc /> },
+      { path: '/air-conditioning/ductless-systems', element: <DuctlessAc /> },
       { path: '/heat-pumps', element: <HeatPumps /> },
       { path: '/water-heaters/storage-water-heaters', element: <StorageWaterHeater /> },
       { path: '/water-heaters/tankless-water-heaters', element: <TanklessWaterHeater /> },
       // { path: '/boilers/tankless-combi-boilers', element: <TanklessCombiBoiler /> },
       { path: '/indoor-air-quality/humidifiers', element: <Humidifier /> },
       { path: '/indoor-air-quality/thermostats', element: <Thermostat /> },
-      { path: '/indoor-air-quality/air-cleaner', element: <AirCleaner /> },
+      { path: '/indoor-air-quality/air-cleaner-and-filter', element: <AirCleaner /> },
       { path: '/indoor-air-quality/ventilation-units', element: <VentilationUnits /> },
-      { path: '/rooftop-units', element: <RooftopUnit /> },
+      { path: '/rooftop-units-and-unit-heaters', element: <RooftopUnit /> },
       { path: '/gas-piping', element: <GasPiping /> },
     ],
     []
@@ -43,7 +43,7 @@ function App() {
   return (
     <>
       {/* Conditionally apply class to Navbar for non-home routes */}
-      <div className={pathname === '/nasa_heating/' ? 'navbar-container' : 'fixed top-0 left-0 right-0 z-10 bg-white shadow-lg'}>
+      <div className={pathname === '/' ? 'navbar-container' : 'fixed top-0 left-0 right-0 z-10 bg-white shadow-lg'}>
         <Navbar />
       </div>
       <Routes>

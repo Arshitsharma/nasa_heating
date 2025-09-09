@@ -83,8 +83,8 @@ export const Navbar = () => {
     'AIR CONDITIONING': {
       path: '/air-conditioning',
       subItems: [
-        { label: 'CENTRAL AIR CONDITIONERS', path: '/air-conditioning/central-ac' },
-        { label: 'DUCTLESS SYSTEMS', path: '/air-conditioning/ductless-systems-&-heat-pumps' },
+        { label: 'CENTRAL AIR CONDITIONERS', path: '/air-conditioning/central-air-conditioner' },
+        { label: 'DUCTLESS SYSTEMS', path: '/air-conditioning/ductless-systems' },
         // { label: 'HEAT PUMPS', path: '/air-conditioning/heat-pumps' },
       ],
     },
@@ -111,13 +111,13 @@ export const Navbar = () => {
       subItems: [
         { label: 'HUMIDIFIERS', path: '/indoor-air-quality/humidifiers' },
         { label: 'THERMOSTAT', path: '/indoor-air-quality/thermostats' },
-        { label: 'AIR CLEANER & FILTER', path: '/indoor-air-quality/air-cleaner' },
+        { label: 'AIR CLEANER & FILTER', path: '/indoor-air-quality/air-cleaner-and-filter' },
         { label: 'VENTILATION UNITS', path: '/indoor-air-quality/ventilation-units' },
       ] 
       
     },
     'COMMERCIAL HVAC': { 
-      path: '/rooftop-units', 
+      path: '/rooftop-units-and-unit-heaters', 
       subItems: [
       ] 
     },
@@ -204,7 +204,8 @@ export const Navbar = () => {
         <img 
           src={logo} 
           alt="NASA HVAC Logo" 
-          onClick={() => navigate('/nasa_heating/')} 
+          onClick={() => navigate('/')} 
+          // onClick={() => navigate('/nasa_heating/')} 
           className="h-10 sm:h-14 w-auto cursor-pointer" 
         />
 
